@@ -52,15 +52,6 @@
   </a>
 </div>
 
-<div align="center">
-  <br>
-  <sub>📋 <em>Nhấp vào biểu tượng copy góc phải để sao chép địa chỉ email:</em></sub>
-</div>
-
-```text
-nguyenquockhoa00725005@gmail.com
-```
-
 <br>
 
 <table align="center" width="100%">
