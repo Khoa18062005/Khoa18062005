@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="100%" height="160">
+  <defs>
+    <!-- Ocean Wave Gradients -->
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.35" />
+    </linearGradient>
+
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#075985" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#075985" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#031d38" />
+      <stop offset="50%" stop-color="#082f49" />
+      <stop offset="100%" stop-color="#031d38" />
+    </linearGradient>
+
+    <!-- Whale Fluke Gradient -->
+    <linearGradient id="flukeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="60%" stop-color="#075985" />
+      <stop offset="100%" stop-color="#031d38" />
+    </linearGradient>
+
+    <!-- Bioluminescent Glow -->
+    <filter id="waveGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes waveMove1 {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(-40px); }
+      100% { transform: translateX(0px); }
+    }
+
+    @keyframes waveMove2 {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(35px); }
+      100% { transform: translateX(0px); }
+    }
+
+    @keyframes flukeDip {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(14px) rotate(3deg);
+      }
+    }
+
+    @keyframes sprayGlow {
+      0%, 100% { opacity: 0.3; transform: scale(0.9); }
+      50% { opacity: 0.85; transform: scale(1.1); }
+    }
+
+    .wave1 { animation: waveMove1 8s ease-in-out infinite; }
+    .wave2 { animation: waveMove2 6s ease-in-out infinite; }
+    .fluke { animation: flukeDip 5s ease-in-out infinite; transform-origin: 450px 110px; }
+    .spray { animation: sprayGlow 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Deep Ocean Background -->
+  <rect width="900" height="160" fill="#020812" rx="12" />
+
+  <!-- Layer 1: Back Wave -->
+  <g class="wave1">
+    <path d="
+      M -60,90
+      C 120,60 280,120 450,85
+      C 620,50 780,110 960,80
+      L 960,160 L -60,160 Z
+    " fill="url(#waveGrad1)" />
+  </g>
+
+  <!-- Layer 2: Mid Wave -->
+  <g class="wave2">
+    <path d="
+      M -40,105
+      C 150,130 320,80 500,110
+      C 680,140 820,90 940,115
+      L 940,160 L -40,160 Z
+    " fill="url(#waveGrad2)" />
+  </g>
+
+  <!-- WHALE FLUKE (TAIL) BREACHING THE SURFACE -->
+  <g class="fluke" transform="translate(0, 0)">
+    <!-- Water Splashes / Spray Particles -->
+    <g class="spray" fill="#38bdf8" opacity="0.6">
+      <circle cx="430" cy="95" r="2.5" filter="url(#waveGlow)" />
+      <circle cx="438" cy="85" r="1.8" />
+      <circle cx="448" cy="78" r="2.2" filter="url(#waveGlow)" />
+      <circle cx="452" cy="74" r="1.5" />
+      <circle cx="458" cy="80" r="2.0" />
+      <circle cx="468" cy="90" r="2.4" filter="url(#waveGlow)" />
+    </g>
+
+    <!-- Caudal Peduncle (Tail stock rising from waves) -->
+    <path d="
+      M 438,135
+      C 440,110 445,85 450,70
+      C 455,85 460,110 462,135
+      Z
+    " fill="url(#flukeGrad)" />
+
+    <!-- Majestic Whale Fluke Blades (Notched center) -->
+    <path d="
+      M 450,70
+      C 438,55 410,40 375,38
+      C 370,48 385,65 415,75
+      C 435,82 446,78 450,70
+      C 454,78 465,82 485,75
+      C 515,65 530,48 525,38
+      C 490,40 462,55 450,70
+      Z
+    " fill="url(#flukeGrad)" stroke="#38bdf8" stroke-width="1" filter="url(#waveGlow)" />
+
+    <!-- Trailing Droplets & Mist -->
+    <circle cx="400" cy="55" r="1.5" fill="#7dd3fc" opacity="0.7" />
+    <circle cx="500" cy="55" r="1.5" fill="#7dd3fc" opacity="0.7" />
+    <circle cx="450" cy="48" r="1.2" fill="#2dd4bf" opacity="0.8" />
+  </g>
+
+  <!-- Layer 3: Foreground Wave (covers bottom of fluke) -->
+  <path d="
+    M 0,120
+    C 160,100 300,135 450,118
+    C 600,101 760,130 900,112
+    L 900,160 L 0,160 Z
+  " fill="url(#waveGrad3)" />
+
+  <!-- Foam / Shimmer Crest Line on Front Wave -->
+  <path d="
+    M 0,120
+    C 160,100 300,135 450,118
+    C 600,101 760,130 900,112
+  " fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.5" filter="url(#waveGlow)" />
+
+  <!-- Footer Telemetry & Farewell Note -->
+  <g transform="translate(450.0, 145)" text-anchor="middle">
+    <text font-family="'JetBrains Mono', 'Montserrat', monospace" font-size="11" letter-spacing="3px" fill="#7dd3fc" font-weight="600">
+      DIVING INTO DEEPER HORIZONS // STAY CURIOUS &amp; BUILD GREAT THINGS
+    </text>
+  </g>
+</svg>

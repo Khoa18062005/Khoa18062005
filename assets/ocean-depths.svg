@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="360">
+  <defs>
+    <!-- Ocean Depth Gradient: Sunlit to Hadal Trench -->
+    <linearGradient id="depthGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="28%" stop-color="#082f49" />
+      <stop offset="60%" stop-color="#04182b" />
+      <stop offset="100%" stop-color="#020a14" />
+    </linearGradient>
+
+    <!-- Layer Card Fill -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0c2d48" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#071b2d" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Depth Scale Indicator Gradient -->
+    <linearGradient id="meterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#2dd4bf" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Bioluminescent Glow Filter -->
+    <filter id="oceanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseDepth {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes scanDown {
+      0% { transform: translateY(0px); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      100% { transform: translateY(330px); opacity: 0; }
+    }
+
+    @keyframes floatWhaleSmall {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(12px, -6px); }
+    }
+
+    @keyframes floatManta {
+      0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+      50% { transform: translate(-10px, 4px) rotate(-2deg); }
+    }
+
+    .scan-line {
+      animation: scanDown 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .whale-silhouette {
+      animation: floatWhaleSmall 6s ease-in-out infinite;
+    }
+
+    .manta-silhouette {
+      animation: floatManta 7s ease-in-out infinite 1s;
+    }
+
+    .zone-title {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #38bdf8;
+    }
+
+    .zone-depth {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      fill: #2dd4bf;
+      letter-spacing: 1px;
+      opacity: 0.85;
+    }
+
+    .tech-pill {
+      font-family: 'JetBrains Mono', -apple-system, sans-serif;
+      font-size: 11px;
+      fill: #e0f2fe;
+      font-weight: 500;
+    }
+
+    .hud-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 2px;
+      fill: #0ea5e9;
+      opacity: 0.8;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="850" height="360" fill="url(#depthGradient)" rx="12" stroke="#0e3a5a" stroke-width="1" />
+
+  <!-- Bathymetric Top Header Bar -->
+  <g transform="translate(30, 24)">
+    <text x="0" y="0" font-family="'Montserrat', sans-serif" font-size="14" font-weight="800" letter-spacing="3px" fill="#ffffff">
+      BATHYMETRIC TECH ECOSYSTEM
+    </text>
+    <text x="790" y="0" text-anchor="end" class="hud-label">
+      ARCHITECTURAL DEPTH CHART // ACOUSTIC MAPPING
+    </text>
+    <line x1="0" y1="10" x2="790" y2="10" stroke="#0284c7" stroke-width="0.7" opacity="0.4" />
+  </g>
+
+  <!-- Depth Meter Scale on the Left (0m to 11,000m) -->
+  <g transform="translate(30, 52)">
+    <!-- Vertical Bar -->
+    <rect x="0" y="0" width="4" height="280" fill="url(#meterGrad)" rx="2" />
+
+    <!-- Depth Ticks & Indicators -->
+    <g class="hud-label" fill="#7dd3fc">
+      <!-- 0m -->
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="14" y="4" font-size="8.5">0M // SURFACE</text>
+
+      <!-- 200m -->
+      <line x1="0" y1="70" x2="8" y2="70" stroke="#2dd4bf" stroke-width="1.2" />
+      <text x="14" y="74" font-size="8.5">200M // TWILIGHT</text>
+
+      <!-- 1000m -->
+      <line x1="0" y1="140" x2="8" y2="140" stroke="#0284c7" stroke-width="1.2" />
+      <text x="14" y="144" font-size="8.5">1,000M // MIDNIGHT</text>
+
+      <!-- 4000m -->
+      <line x1="0" y1="210" x2="8" y2="210" stroke="#0369a1" stroke-width="1.2" />
+      <text x="14" y="214" font-size="8.5">4,000M // ABYSSAL</text>
+
+      <!-- 11000m -->
+      <line x1="0" y1="280" x2="8" y2="280" stroke="#0f172a" stroke-width="1.2" />
+      <text x="14" y="280" font-size="8.5">11,000M // TRENCH</text>
+    </g>
+  </g>
+
+  <!-- LAYER 1: 0m - 200m | EPIPELAGIC (Surface & Client Engineering) -->
+  <g transform="translate(145, 50)">
+    <rect width="675" height="60" rx="8" fill="url(#cardGrad)" stroke="#0284c7" stroke-width="0.8" opacity="0.9" />
+    <line x1="0" y1="0" x2="4" y2="60" stroke="#38bdf8" stroke-width="4" />
+
+    <!-- Zone Info -->
+    <text x="16" y="22" class="zone-title">SURFACE INTERFACE &amp; CLIENT SYSTEMS</text>
+    <text x="16" y="38" class="zone-depth">EPIPELAGIC ZONE [ 0M – 200M ] • SUNLIT REAL-TIME EXPERIENCES</text>
+
+    <!-- Marine Silhouette (Small School of Flying Fish / Rays) -->
+    <g class="manta-silhouette" opacity="0.4" fill="#38bdf8" transform="translate(620, 18) scale(0.7)">
+      <path d="M 0,10 C 15,0 35,5 45,15 C 35,18 20,22 10,24 C 5,20 0,16 0,10 Z" />
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(16, 44)">
+      <text class="tech-pill">
+        <tspan fill="#38bdf8">TypeScript</tspan>  •  
+        <tspan fill="#67e8f9">React</tspan>  •  
+        <tspan fill="#e0f2fe">Next.js</tspan>  •  
+        <tspan fill="#2dd4bf">Tailwind CSS</tspan>  •  
+        <tspan fill="#93c5fd">HTML5 / CSS3</tspan>  •  
+        <tspan fill="#7dd3fc">Responsive UX</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- LAYER 2: 200m - 1,000m | MESOPELAGIC (Application Core & Distributed APIs) -->
+  <g transform="translate(145, 120)">
+    <rect width="675" height="60" rx="8" fill="url(#cardGrad)" stroke="#0e7490" stroke-width="0.8" opacity="0.9" />
+    <line x1="0" y1="0" x2="4" y2="60" stroke="#2dd4bf" stroke-width="4" />
+
+    <!-- Zone Info -->
+    <text x="16" y="22" class="zone-title" fill="#2dd4bf">ENGINEERING SERVICES &amp; API ARCHITECTURE</text>
+    <text x="16" y="38" class="zone-depth" fill="#5eead4">MESOPELAGIC ZONE [ 200M – 1,000M ] • DISTRIBUTED TELEMETRY &amp; SERVICES</text>
+
+    <!-- Marine Silhouette (Blue Whale Swimming in Twilight) -->
+    <g class="whale-silhouette" opacity="0.5" fill="#2dd4bf" transform="translate(605, 16) scale(0.65)">
+      <path d="M 10,14 C 25,6 50,6 70,12 C 78,15 80,18 78,22 C 70,26 45,28 30,24 C 20,20 12,18 10,14 Z" />
+      <path d="M 10,14 C 5,10 0,6 -6,5 C -4,10 2,13 8,14 C 2,16 -4,20 -6,24 C 0,22 5,18 10,14 Z" />
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(16, 44)">
+      <text class="tech-pill">
+        <tspan fill="#2dd4bf">Spring Boot</tspan>  •  
+        <tspan fill="#67e8f9">Node.js</tspan>  •  
+        <tspan fill="#e0f2fe">Express</tspan>  •  
+        <tspan fill="#a5f3fc">RESTful APIs</tspan>  •  
+        <tspan fill="#99f6e4">GraphQL</tspan>  •  
+        <tspan fill="#38bdf8">WebSocket Streams</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: 1,000m - 4,000m | BATHYPELAGIC (Deep Persistence & High-Concurrency Systems) -->
+  <g transform="translate(145, 190)">
+    <rect width="675" height="60" rx="8" fill="url(#cardGrad)" stroke="#0369a1" stroke-width="0.8" opacity="0.9" />
+    <line x1="0" y1="0" x2="4" y2="60" stroke="#0284c7" stroke-width="4" />
+
+    <!-- Zone Info -->
+    <text x="16" y="22" class="zone-title" fill="#0284c7">DATA RESERVOIRS &amp; CORE FOUNDATIONS</text>
+    <text x="16" y="38" class="zone-depth" fill="#38bdf8">BATHYPELAGIC ZONE [ 1,000M – 4,000M ] • PERSISTENCE &amp; CONCURRENT LOCKING</text>
+
+    <!-- Marine Silhouette (Bioluminescent Jellyfish / Squid) -->
+    <g opacity="0.5" stroke="#38bdf8" stroke-width="0.8" fill="none" transform="translate(635, 14)">
+      <ellipse cx="14" cy="12" rx="10" ry="7" fill="#0284c7" opacity="0.6" />
+      <path d="M 8,18 C 7,26 5,30 6,36" />
+      <path d="M 12,19 C 13,27 11,31 13,38" />
+      <path d="M 16,19 C 17,27 19,32 18,37" />
+      <path d="M 20,18 C 22,25 21,30 23,35" />
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(16, 44)">
+      <text class="tech-pill">
+        <tspan fill="#38bdf8">Java</tspan>  •  
+        <tspan fill="#60a5fa">Python</tspan>  •  
+        <tspan fill="#93c5fd">PostgreSQL</tspan>  •  
+        <tspan fill="#7dd3fc">MySQL</tspan>  •  
+        <tspan fill="#2dd4bf">Redis Cache</tspan>  •  
+        <tspan fill="#e0f2fe">Database Migrations</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- LAYER 4: 4,000m - 11,000m | ABYSSOPELAGIC & HADAL (Infrastructure & Cloud Trench) -->
+  <g transform="translate(145, 260)">
+    <rect width="675" height="60" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="0.8" opacity="0.9" />
+    <line x1="0" y1="0" x2="4" y2="60" stroke="#0369a1" stroke-width="4" />
+
+    <!-- Zone Info -->
+    <text x="16" y="22" class="zone-title" fill="#7dd3fc">HADAL TRENCH INFRASTRUCTURE &amp; CLOUD</text>
+    <text x="16" y="38" class="zone-depth" fill="#94a3b8">HADAL ZONE [ 4,000M – 11,000M ] • UNBREAKABLE RESILIENCE &amp; DEPLOYMENT</text>
+
+    <!-- Deep Bathyscaphe Submersible Silhouette -->
+    <g opacity="0.55" fill="#38bdf8" transform="translate(630, 22)">
+      <circle cx="15" cy="14" r="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="0.8" />
+      <circle cx="15" cy="14" r="4" fill="#2dd4bf" filter="url(#subtleGlow)" />
+      <!-- Submersible Light Beam -->
+      <polygon points="19,12 50,0 50,28 19,16" fill="#38bdf8" opacity="0.25" />
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(16, 44)">
+      <text class="tech-pill">
+        <tspan fill="#38bdf8">Docker</tspan>  •  
+        <tspan fill="#60a5fa">AWS Cloud</tspan>  •  
+        <tspan fill="#2dd4bf">Git &amp; GitHub Actions</tspan>  •  
+        <tspan fill="#93c5fd">Linux Systems</tspan>  •  
+        <tspan fill="#e0f2fe">Nginx</tspan>  •  
+        <tspan fill="#7dd3fc">Microservices</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Bathymetric Sonar Scanning Line Effect -->
+  <g class="scan-line" pointer-events="none">
+    <line x1="30" y1="0" x2="820" y2="0" stroke="#2dd4bf" stroke-width="1.2" opacity="0.6" filter="url(#subtleGlow)" />
+    <line x1="30" y1="0" x2="820" y2="0" stroke="#38bdf8" stroke-width="4" opacity="0.15" />
+  </g>
+
+  <!-- Outer Tech Border Frame -->
+  <g stroke="#0369a1" stroke-width="1" fill="none" opacity="0.5">
+    <circle cx="14" cy="14" r="2" fill="#38bdf8" />
+    <circle cx="836" cy="14" r="2" fill="#38bdf8" />
+    <circle cx="14" cy="346" r="2" fill="#0284c7" />
+    <circle cx="836" cy="346" r="2" fill="#0284c7" />
+  </g>
+</svg>

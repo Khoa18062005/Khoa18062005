@@ -1,103 +1,108 @@
-<!-- ╔══════════════════════════════════════════════════════════════════╗ -->
-<!-- ║  🌊 KHOA NGUYEN — GitHub Profile                               ║ -->
-<!-- ║  Theme: Ocean Blue & Teal | Style: Cyberpunk Terminal          ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════════╝ -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!--  🐋 NGUYEN KHOA — DEEP OCEAN & BLUE WHALE DEVELOPER PORTFOLIO      -->
+<!--  Theme: Abyssal Blue, Seafoam Aqua & Bioluminescent Cyan          -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="./assets/header-matrix.svg" alt="Matrix Header Animation" width="100%" />
+  <!-- Animated Swimming Blue Whale Header with Light Rays & Bioluminescent Depth -->
+  <img src="./assets/header-whale.svg" alt="Blue Whale Deep Ocean Header" width="100%" />
 </div>
 
 <div align="center">
 
-  <!-- Animated wave text - different from typing SVG -->
+  <!-- Animated Typing Subtitle -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2500&pause=800&color=06B6D4&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=80&lines=%E2%9A%A1+Building+the+future%2C+one+commit+at+a+time;%F0%9F%8C%8A+Turning+caffeine+into+clean+code" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=70&lines=Diving+into+distributed+systems+%26+high-concurrency+architecture;Crafting+scalable+full-stack+applications+with+clean+code" alt="Typing SVG" />
   </a>
 
   <br>
 
-  <!-- Status badges - hexagonal style, different from Thien's flat-square -->
+  <!-- Deep Ocean Shields Badges -->
   <a href="https://github.com/Khoa18062005?tab=followers">
-    <img src="https://img.shields.io/github/followers/Khoa18062005?logo=github&style=for-the-badge&color=0e7490&labelColor=0a0e17&logoColor=06b6d4" alt="Followers" />
+    <img src="https://img.shields.io/github/followers/Khoa18062005?logo=github&style=for-the-badge&color=0284c7&labelColor=03192e&logoColor=38bdf8" alt="Followers" />
   </a>
   &nbsp;
   <a href="https://github.com/Khoa18062005?tab=repositories">
-    <img src="https://img.shields.io/badge/Focus-Full--Stack%20Dev-0e7490?style=for-the-badge&labelColor=0a0e17" alt="Focus" />
+    <img src="https://img.shields.io/badge/VESSEL-FULL--STACK%20DEV-0284c7?style=for-the-badge&labelColor=03192e&logoColor=2dd4bf" alt="Vessel Role" />
   </a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Khoa18062005&label=PROFILE+VIEWS&color=0e7490&style=for-the-badge&labelColor=0a0e17" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Khoa18062005&label=OCEAN+VISITORS&color=0284c7&style=for-the-badge&labelColor=03192e" alt="Profile Views" />
 
 </div>
 
 <br>
 
-<!-- ═══════════════════════ TERMINAL ABOUT ME ═══════════════════════ -->
+<!-- ═════════════════════ SUBMERSIBLE LOG / ABOUT ME ═════════════════════ -->
 
 <div align="center">
 
 ```
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                                                                         ║
-║   ███╗   ██╗ ██████╗ ██╗   ██╗██╗   ██╗███████╗███╗   ██╗              ║
-║   ████╗  ██║██╔════╝ ██║   ██║╚██╗ ██╔╝██╔════╝████╗  ██║              ║
-║   ██╔██╗ ██║██║  ███╗██║   ██║ ╚████╔╝ █████╗  ██╔██╗ ██║              ║
-║   ██║╚██╗██║██║   ██║██║   ██║  ╚██╔╝  ██╔══╝  ██║╚██╗██║              ║
-║   ██║ ╚████║╚██████╔╝╚██████╔╝   ██║   ███████╗██║ ╚████║              ║
-║   ╚═╝  ╚═══╝ ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═══╝              ║
-║                         K H O A                                          ║
-║                                                                         ║
-╚═══════════════════════════════════════════════════════════════════════════╝
+                      .
+                     / \
+                    |   |
+                  .-'---'-.
+                 /  .-. .-.  \
+                |  (   |   )  |          _.-'''''-._
+                 \  '-' '-'  /         .'  _     _  '.
+            _..---'---------'---.._   /   (o)   (o)   \
+          .'                       '. |      ___      |
+         /    N A U T I L U S       \ \     '---'     /
+        |       K H O A              | '.  ._____.  .'
+         \   PACIFIC TRENCH 3820M   /    '-._____.-'
+          '.                       .'
+            '--.._____________..--'
 ```
 
 </div>
 
-<table align="center">
+<table align="center" width="100%">
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🖥️ Terminal Session
+### ◈ Acoustic Logbook
 
 ```bash
-khoa@universe:~$ cat about_me.json
+nautilus@abyss:~$ cat telemetry_manifest.json
 ```
 
 ```json
 {
   "name": "Nguyen Khoa",
-  "status": "🎓 University Student",
-  "role": "Full-Stack Developer",
-  "location": "Vietnam 🇻🇳",
-  "currently_learning": [
-    "Cloud Architecture",
-    "System Design Patterns",
-    "AI/ML Integration"
+  "callsign": "BlueWhale-05",
+  "status": "University Software Engineering Student",
+  "specialization": "Full-Stack Development & Architecture",
+  "operating_depth": "Pacific Trench // 3,820m",
+  "current_expeditions": [
+    "High-Concurrency Distributed Systems",
+    "Microservice Ecosystems & Redis Redlock",
+    "Decoupled Full-Stack Architecture",
+    "Applied Machine Learning Pipelines"
   ],
-  "fun_fact": "I debug with console.log and I'm proud of it 😄",
-  "motto": "Code is poetry, bugs are just plot twists"
+  "philosophy": "Like a blue whale navigating the boundless abyss, navigate complexity with calm precision and clean code."
 }
 ```
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 📡 System Status
+### ◈ Oceanic Telemetry
 
 ```yaml
-# system_status.yml
-uptime: "since 2005-06-18"
-kernel: "student-v4.0-lts"
-shell: "zsh with oh-my-zsh"
+# ocean_telemetry.yml
+submersible: "Nautilus-Mk.IV"
+hull_integrity: "100% nominal"
+acoustic_frequency: "20Hz resonance"
+ballast_water: "purified"
 
-processes:
-  learning:    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░ 85%
-  coding:      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░ 90%
-  debugging:   ▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░ 70%
-  coffee_intake: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100%
+depth_readings:
+  surface_engineering:   ████████████████░░ 88%
+  backend_concurrency:   █████████████████░ 92%
+  distributed_caching:   ███████████████░░░ 80%
+  resilience_devops:     ████████████░░░░░░ 70%
 
-network:
-  linkedin: "connected"
-  github:   "active"
-  email:    "listening"
+sonar_grid:
+  ping_rate: "Active (continuous sweep)"
+  connection: "Encrypted WebSocket"
 ```
 
 </td>
@@ -106,13 +111,16 @@ network:
 
 ---
 
-<!-- ═══════════════════ TECH RADAR VISUALIZATION ═══════════════════ -->
+<!-- ═══════════════════ BATHYMETRIC TECH ECOSYSTEM ═══════════════════ -->
 
 <div align="center">
 
-## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> &nbsp; Tech Radar &nbsp; <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+## ◈ Bathymetric Tech Ecosystem
 
-  <img src="./assets/tech-radar.svg" alt="Tech Radar Animation" width="95%" />
+<p><em>Mapping technology layers to oceanic depth zones — from sunlit interfaces to deep persistent trenches</em></p>
+
+  <!-- Bathymetric Ocean Depth Visualization (Replaces Skill Bars) -->
+  <img src="./assets/ocean-depths.svg" alt="Bathymetric Tech Depth Chart" width="100%" />
 
 </div>
 
@@ -120,241 +128,237 @@ network:
 
 <div align="center">
 
-## 🛠️ Technological Arsenal
-
-<br>
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,python,java,react,nextjs,tailwind,html,css&theme=dark" alt="Languages & Frontend" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,express,spring,postgres,mysql,redis,mongodb&theme=dark" alt="Backend & Databases" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,aws,git,github,postman,graphql,nginx,linux,vscode&theme=dark" alt="DevOps & Tools" />
-  </a>
-</p>
+<!-- Acoustic Marine Sonar Sweep -->
+  <img src="./assets/tech-radar.svg" alt="Deep Ocean Acoustic Radar" width="95%" />
 
 </div>
 
 <br>
 
 <div align="center">
-  <img src="./assets/skills-bar.svg" alt="Skills Power Levels" width="95%" />
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,python,java,react,nextjs,tailwind,html,css&theme=dark" alt="Languages & Client Layer" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,spring,postgres,mysql,redis,mongodb&theme=dark" alt="Backend & Data Reservoirs" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=docker,aws,git,github,postman,graphql,nginx,linux,vscode&theme=dark" alt="Infrastructure & Marine Tooling" />
+  </a>
+</p>
+
 </div>
 
 ---
 
-<!-- ═══════════════════ PROJECTS - TIMELINE STYLE ═══════════════════ -->
+<!-- ═══════════════════ FLAGSHIP EXPEDITIONS / PROJECTS ═══════════════════ -->
 
 <div align="center">
 
-## 🚀 Mission Log — Featured Projects
+## ◈ Flagship Engineering Expeditions
+
+<p><em>Production-grade platforms engineered for high throughput, fault tolerance, and clean modularity</em></p>
 
 </div>
 
-> [!NOTE]
-> Each project represents a unique challenge conquered. Click to explore the source code.
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <div align="left">
+        <h4>◈ Abyssal Cinema Platform — CineBook</h4>
+        <p>Enterprise cinema ticketing platform engineered for <strong>extreme concurrent traffic</strong>. Solves distributed seat booking collisions using <strong>Redis Redlock distributed locking</strong>, accompanied by an intelligent real-time customer assistant.</p>
+        <p>
+          <img src="https://img.shields.io/badge/HTML5-03192e?style=flat-square&logo=html5&logoColor=38bdf8" />
+          <img src="https://img.shields.io/badge/Tailwind-03192e?style=flat-square&logo=tailwind-css&logoColor=2dd4bf" />
+          <img src="https://img.shields.io/badge/Redis_Redlock-03192e?style=flat-square&logo=redis&logoColor=f43f5e" />
+          <img src="https://img.shields.io/badge/High_Concurrency-0284c7?style=flat-square" />
+        </p>
+        <p>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Repository-Inspect_Source_%E2%86%92-0284c7?style=flat-square" /></a>
+          <img src="https://img.shields.io/badge/Status-Maintained-2dd4bf?style=flat-square" />
+        </p>
+      </div>
+    </td>
+    <td width="50%" valign="top">
+      <div align="left">
+        <h4>◈ Nautilus Property Platform — MayVang</h4>
+        <p>Full-stack hotel reservation and property management ecosystem. Built on a <strong>decoupled micro-architecture</strong> separating Java Spring Boot core backend microservices from high-performance reactive web clients.</p>
+        <p>
+          <img src="https://img.shields.io/badge/Java-03192e?style=flat-square&logo=openjdk&logoColor=fb923c" />
+          <img src="https://img.shields.io/badge/Spring_Boot-03192e?style=flat-square&logo=spring-boot&logoColor=4ade80" />
+          <img src="https://img.shields.io/badge/PostgreSQL-03192e?style=flat-square&logo=postgresql&logoColor=38bdf8" />
+          <img src="https://img.shields.io/badge/Clean_Architecture-0284c7?style=flat-square" />
+        </p>
+        <p>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Backend-Inspect_Source_%E2%86%92-0284c7?style=flat-square" /></a>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Client-Inspect_Source_%E2%86%92-075985?style=flat-square" /></a>
+        </p>
+      </div>
+    </td>
+  </tr>
 
-<details>
-<summary><h3>🔮 Project Alpha — <em>Click to Expand</em></h3></summary>
+  <tr>
+    <td width="50%" valign="top">
+      <div align="left">
+        <h4>◈ Leviathan Intelligence — Sentiment Analysis Engine</h4>
+        <p>End-to-end Machine Learning pipeline for Vietnamese and multilingual text classification. Features high-dimensional tokenization, custom neural feature extraction, and lightweight decoupled inference micro-endpoints.</p>
+        <p>
+          <img src="https://img.shields.io/badge/PyTorch-03192e?style=flat-square&logo=pytorch&logoColor=fb923c" />
+          <img src="https://img.shields.io/badge/Python-03192e?style=flat-square&logo=python&logoColor=38bdf8" />
+          <img src="https://img.shields.io/badge/Scikit_Learn-03192e?style=flat-square&logo=scikit-learn&logoColor=f59e0b" />
+          <img src="https://img.shields.io/badge/Model_Serving-0284c7?style=flat-square" />
+        </p>
+        <p>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Inference_API-Explore_%E2%86%92-0284c7?style=flat-square" /></a>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Web_Client-Explore_%E2%86%92-075985?style=flat-square" /></a>
+        </p>
+      </div>
+    </td>
+    <td width="50%" valign="top">
+      <div align="left">
+        <h4>◈ Deep Blue Algorithmic Agent — Heuristic Caro AI</h4>
+        <p>Autonomous strategic game agent capable of competitive play on arbitrary NxN boards. Implements <strong>dynamic heuristic evaluation functions</strong> with <strong>Alpha-Beta Pruning</strong> and branch optimization for sub-second moves.</p>
+        <p>
+          <img src="https://img.shields.io/badge/Java-03192e?style=flat-square&logo=openjdk&logoColor=fb923c" />
+          <img src="https://img.shields.io/badge/Alpha_Beta-03192e?style=flat-square&logo=google&logoColor=2dd4bf" />
+          <img src="https://img.shields.io/badge/Game_Theory-0284c7?style=flat-square" />
+        </p>
+        <p>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/AI_Engine-Inspect_Source_%E2%86%92-0284c7?style=flat-square" /></a>
+          <img src="https://img.shields.io/badge/Status-Benchmark_Passed-2dd4bf?style=flat-square" />
+        </p>
+      </div>
+    </td>
+  </tr>
+</table>
 
 <br>
 
 <div align="center">
 
-| | |
-|:--|:--|
-| **Mission** | 🎯 Coming Soon — Exciting project in development |
-| **Status** | 🟢 `IN_PROGRESS` |
-| **Tech** | ![JavaScript](https://img.shields.io/badge/-JavaScript-0a0e17?style=flat-square&logo=javascript&logoColor=F7DF1E) ![React](https://img.shields.io/badge/-React-0a0e17?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/-Node.js-0a0e17?style=flat-square&logo=node.js&logoColor=339933) |
-| **Architecture** | Microservices • REST API • Real-time WebSocket |
+### ◈ Auxiliary Fleet Repositories
+
+| Fleet Repository | Technology Stack | Core Architecture & Focus | Access |
+| :--- | :--- | :--- | :--- |
+| **Encrypted File Vault** | `C#` `.NET Core` | Local AES-256 filesystem encryption utility | [Inspect Repo →](https://github.com/Khoa18062005) |
+| **Ocean Commerce Engine** | `React` `Node.js` `Express` | Full-cycle e-commerce store with catalog & cart | [Inspect Repo →](https://github.com/Khoa18062005) |
+| **Submersible Task Manager** | `Java` `Desktop UI` | Desktop productivity scheduler & habit tracker | [Inspect Repo →](https://github.com/Khoa18062005) |
+| **Precision Scientific Engine** | `Java` `Algorithmic UI` | Multi-mode functional arithmetic calculator | [Inspect Repo →](https://github.com/Khoa18062005) |
 
 </div>
-
-```
-📦 project-alpha
-├── 🎨 client/          # React SPA with real-time features
-├── ⚙️  server/          # Node.js API with WebSocket
-├── 🗄️  database/        # PostgreSQL + Redis caching
-├── 🐳 docker/          # Containerized deployment
-└── 📋 docs/            # Architecture documentation
-```
-
-</details>
-
-<details>
-<summary><h3>🌐 Project Beta — <em>Click to Expand</em></h3></summary>
-
-<br>
-
-<div align="center">
-
-| | |
-|:--|:--|
-| **Mission** | 🎯 Coming Soon — Another groundbreaking project |
-| **Status** | 🟡 `PLANNING` |
-| **Tech** | ![Python](https://img.shields.io/badge/-Python-0a0e17?style=flat-square&logo=python&logoColor=3776AB) ![Spring](https://img.shields.io/badge/-Spring_Boot-0a0e17?style=flat-square&logo=spring-boot&logoColor=6DB33F) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-0a0e17?style=flat-square&logo=postgresql&logoColor=316192) |
-| **Architecture** | Clean Architecture • Domain-Driven Design |
-
-</div>
-
-```
-📦 project-beta
-├── 🧠 ml-engine/       # Python ML pipeline
-├── ⚙️  api-gateway/     # Spring Boot microservice
-├── 🗄️  data-layer/      # PostgreSQL with migrations
-└── 📊 analytics/       # Data visualization dashboard
-```
-
-</details>
-
-<details>
-<summary><h3>🤖 Project Gamma — <em>Click to Expand</em></h3></summary>
-
-<br>
-
-<div align="center">
-
-| | |
-|:--|:--|
-| **Mission** | 🎯 Coming Soon — AI-powered innovation |
-| **Status** | 🔵 `RESEARCH` |
-| **Tech** | ![Python](https://img.shields.io/badge/-Python-0a0e17?style=flat-square&logo=python&logoColor=3776AB) ![TensorFlow](https://img.shields.io/badge/-TensorFlow-0a0e17?style=flat-square&logo=tensorflow&logoColor=FF6F00) ![Docker](https://img.shields.io/badge/-Docker-0a0e17?style=flat-square&logo=docker&logoColor=2496ED) |
-| **Architecture** | ML Pipeline • Containerized Training • API Serving |
-
-</div>
-
-```
-📦 project-gamma
-├── 🧠 model/           # Neural network architecture
-├── 📊 training/        # Training pipeline & datasets  
-├── 🔌 api/             # Inference API endpoint
-└── 🐳 deploy/          # Docker + cloud deployment
-```
-
-</details>
 
 ---
 
-<!-- ═══════════════════ ACTIVITY MONITOR ═══════════════════ -->
+<!-- ═══════════════════ LIVE TELEMETRY & ACTIVITY MONITOR ═══════════════════ -->
 
 <div align="center">
 
-## 📊 Mission Control — Live Metrics
+## ◈ Abyssal Telemetry & Live Activity
 
-  <img src="./assets/activity-graph.svg" alt="Activity Monitor" width="95%" />
+  <!-- Custom Animated ECG / Sonar Pulse Monitor -->
+  <img src="./assets/activity-graph.svg" alt="Acoustic Sonar Activity Monitor" width="95%" />
 
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Khoa18062005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=06b6d4&icon_color=14b8a6&text_color=a5f3fc" alt="GitHub Stats" width="48.5%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Khoa18062005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=03192e&title_color=38bdf8&icon_color=2dd4bf&text_color=e0f2fe" alt="GitHub Stats" width="48.5%" />
   &nbsp;
-  <img src="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=06b6d4&fire=14b8a6&currStreakLabel=06b6d4&sideLabels=a5f3fc&currStreakNum=a5f3fc&sideNums=a5f3fc&dates=4a5568&background=0a0e17" alt="GitHub Streak" width="48.5%" />
+  <img src="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=38bdf8&fire=2dd4bf&currStreakLabel=38bdf8&sideLabels=e0f2fe&currStreakNum=e0f2fe&sideNums=e0f2fe&dates=0284c7&background=03192e" alt="GitHub Streak" width="48.5%" />
   <br><br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Khoa18062005&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=06b6d4&text_color=a5f3fc" alt="Top Languages" width="55%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Khoa18062005&layout=compact&theme=tokyonight&hide_border=true&bg_color=03192e&title_color=38bdf8&text_color=e0f2fe" alt="Top Languages" width="55%" />
 </div>
 
----
+<br>
 
-<!-- ═══════════════════ CONTRIBUTION SNAKE ═══════════════════ -->
-
+<!-- 3D Contribution Skyline (Generated by GitHub Action) -->
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg" />
+    <img alt="3D Isometric Contribution Skyline" src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
+  </picture>
+</div>
 
-## 🐍 Contribution Serpent
+<br>
 
+<!-- Contribution Snake Animation -->
+<div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake.svg" />
-    <img alt="Snake animation" src="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
-
-</div>
-
-<br>
-
-<!-- 3D Contribution Skyline -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/main/profile-3d-contrib/profile-night-rainbow.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/main/profile-3d-contrib/profile-green-animate.svg" />
-    <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
+    <img alt="Ocean Serpent Contribution Animation" src="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake.svg" width="100%" />
   </picture>
 </div>
 
 ---
 
-<!-- ═══════════════════ CONNECT SECTION ═══════════════════ -->
+<!-- ═══════════════════ CONNECT & EXPEDITIONS ═══════════════════ -->
 
 <div align="center">
 
-## 🌐 Connect & Collaborate
+## ◈ Acoustic Frequencies & Contact
 
 <br>
 
 <a href="https://github.com/Khoa18062005">
-  <img src="https://img.shields.io/badge/-%40Khoa18062005-0a0e17?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/GitHub-%40Khoa18062005-0284c7?style=for-the-badge&logo=github&logoColor=white&labelColor=03192e" alt="GitHub" />
 </a>
 &nbsp;&nbsp;
 <a href="https://linkedin.com/in/YOUR_LINKEDIN">
-  <img src="https://img.shields.io/badge/-LinkedIn-0a0e17?style=for-the-badge&logo=linkedin&logoColor=0077B5" alt="LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0284c7?style=for-the-badge&logo=linkedin&logoColor=0077B5&labelColor=03192e" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
 <a href="mailto:YOUR_EMAIL@gmail.com">
-  <img src="https://img.shields.io/badge/-Email-0a0e17?style=for-the-badge&logo=gmail&logoColor=D14836" alt="Email" />
+  <img src="https://img.shields.io/badge/Dispatch-Email-0284c7?style=for-the-badge&logo=gmail&logoColor=D14836&labelColor=03192e" alt="Email" />
 </a>
 &nbsp;&nbsp;
 <a href="https://facebook.com/YOUR_FACEBOOK">
-  <img src="https://img.shields.io/badge/-Facebook-0a0e17?style=for-the-badge&logo=facebook&logoColor=1877F2" alt="Facebook" />
+  <img src="https://img.shields.io/badge/Social-Facebook-0284c7?style=for-the-badge&logo=facebook&logoColor=1877F2&labelColor=03192e" alt="Facebook" />
 </a>
 
 <br><br>
 
-<!-- Spotify / Dev Quote widget -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=First%2C%20solve%20the%20problem.%20Then%2C%20write%20the%20code.&author=John%20Johnson" alt="Dev Quote" width="65%" />
-
-<br><br>
-
-<!-- Cyberpunk Coding Animation -->
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="420" alt="Cyberpunk Workspace" />
+<!-- Ocean Quote -->
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The%20sea%2C%20once%20it%20casts%20its%20spell%2C%20holds%20one%20in%20its%20net%20of%20wonder%20forever.&author=Jacques%20Cousteau" alt="Ocean Quote" width="65%" />
 
 </div>
 
 ---
 
-<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<!-- ═══════════════════ MAJESTIC WHALE FOOTER ═══════════════════ -->
 
 <div align="center">
-  <img src="./assets/footer-wave.svg" alt="Wave Footer" width="100%" />
+  <!-- Animated Blue Whale Fluke / Wave Breaching Footer -->
+  <img src="./assets/footer-whale.svg" alt="Whale Fluke Wave Footer" width="100%" />
 </div>
 
 <div align="center">
   <br>
-  <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=06b6d4&text=Thanks%20for%20visiting!&height=60&fontSize=24&fontAlignY=50&desc=Let's%20build%20something%20amazing%20together%20🚀&descSize=14&descAlignY=80&descColor=14b8a6" alt="Thanks" />
-  <br>
   
   ```
-  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⣼⣿⠋⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠈⢻⣿⣿⡄⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⣸⣿⡏⠀⠀⠀⣠⣶⣾⣿⣿⣿⠿⠿⠿⢿⣿⣿⣿⣄⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⣿⣿⠁⠀⠀⢰⣿⣿⣯⠁⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⣷⡄⠀
-  ⠀⠀⣀⣤⣴⣶⣶⣿⡟⠀⠀⢸⣿⣿⣿⣆⠀  < Happy   ⠀⠀⠙⣷⡀
-  ⠀⢰⣿⡟⠋⠉⣹⣿⡇⠀⠀⠀⠻⣿⣿⣿⣷⣦⡀  Coding! > ⠀⢻⡇
-  ⠀⢸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠉⠻⠿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⣸⣿
-  ⠀⢸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣄⠀⠀⠀⣰⣿⠇
-  ⠀⠘⣿⣷⠀⢀⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣶⣿⣿⡏⠀
-  ⠀⠀⠻⣿⣷⣿⣿⠏⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⣿⣿⡿⠋⠀⠀
-  ⠀⠀⠀⠈⠻⣿⡏⠀⠀⠀⠀⠙⠳⣶⣤⣤⣤⣶⣿⡿⠿⠛⢻⡿⠋⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠁⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀
+                                         __
+                                     _.-~  )
+                          _..--~~~~,'   ,-/     _
+                       .-'. . . .'   ,-','    ,' )
+                     ,'. . . _   ,--'  /(__.-'  ,'
+                   ,'. . .  (@)'---./   '-.   '-.
+                 ,'. . . . _----_   /       `'-. '.
+                / . . . . 'of_  '--'            `-'
+               / . . . . ._____|
+              | . . . . . . . .|
+              | . . . . . . . .|
+               \ . . . . . . ./   WHALE RESIDUE DETECTED:
+                \ . . . . . ./    CALM • RESILIENT • LIMITLESS
+                 `--._____.-'
   ```
   
-  <sub>⚡ Powered by caffeine, curiosity, and countless Stack Overflow tabs ⚡</sub>
+  <sub>≋ Navigating the digital ocean with curiosity, resilience, and clean architecture ≋</sub>
 </div>
