@@ -36,7 +36,7 @@
       <stop offset="100%" stop-color="#075985" stop-opacity="0.6" />
     </linearGradient>
 
-    <!-- High-Contrast Text Drop Shadow (Sharp & Readable, NO BLURRY SMEAR) -->
+    <!-- Crisp dark shadow for text contrast without frame -->
     <filter id="crispShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#020812" flood-opacity="0.95" />
     </filter>
@@ -49,26 +49,11 @@
       </feMerge>
     </filter>
 
-    <!-- Ambient Glow behind plate -->
-    <filter id="ambientPlateGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
     <!-- Water Surface Wave Pattern -->
     <linearGradient id="surfaceGlow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.3" />
       <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.6" />
       <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.3" />
-    </linearGradient>
-
-    <!-- Center Card Gradient (Semi-transparent dark glass for 100% crystal readability) -->
-    <linearGradient id="glassPlate" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#04182b" stop-opacity="0.82" />
-      <stop offset="100%" stop-color="#020d18" stop-opacity="0.90" />
     </linearGradient>
   </defs>
 
@@ -160,6 +145,33 @@
       }
     }
 
+    /* SHIMMERING & BIOLUMINESCENT GLOW ANIMATION FOR NGUYEN KHOA */
+    @keyframes nameGlowShimmer {
+      0%, 100% {
+        fill: #ffffff;
+        filter: drop-shadow(0 0 5px #38bdf8) drop-shadow(0 0 15px rgba(56, 189, 248, 0.75)) drop-shadow(0 3px 6px #010811);
+      }
+      33% {
+        fill: #f0fdfa;
+        filter: drop-shadow(0 0 12px #2dd4bf) drop-shadow(0 0 28px rgba(45, 212, 191, 0.95)) drop-shadow(0 3px 6px #010811);
+      }
+      66% {
+        fill: #e0f2fe;
+        filter: drop-shadow(0 0 8px #67e8f9) drop-shadow(0 0 20px rgba(103, 232, 249, 0.85)) drop-shadow(0 3px 6px #010811);
+      }
+    }
+
+    /* TWINKLING SPARKLE STARS */
+    @keyframes twinkleSparkle1 {
+      0%, 100% { opacity: 0.15; transform: scale(0.6) rotate(0deg); }
+      50% { opacity: 1; transform: scale(1.3) rotate(45deg); filter: drop-shadow(0 0 6px #38bdf8); }
+    }
+
+    @keyframes twinkleSparkle2 {
+      0%, 100% { opacity: 0.2; transform: scale(0.6) rotate(45deg); }
+      50% { opacity: 1; transform: scale(1.4) rotate(90deg); filter: drop-shadow(0 0 8px #2dd4bf); }
+    }
+
     .whale-swim-group {
       animation: swimAcross 22s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
@@ -209,22 +221,33 @@
       fill: #38bdf8;
     }
 
-    /* CRISP, ULTRA-READABLE MAIN NAME (NO BLUR MUSH) */
-    .title-name {
+    /* SHIMMERING GLOWING NAME (NO BOX, CRISP & VIBRANT) */
+    .title-name-glow {
       font-family: 'Montserrat', 'Segoe UI', -apple-system, sans-serif;
-      font-size: 38px;
+      font-size: 40px;
       font-weight: 900;
       letter-spacing: 7px;
-      fill: #ffffff;
+      animation: nameGlowShimmer 4s ease-in-out infinite;
     }
 
-    /* CRISP, SHARP SUBTITLE */
+    /* CRISP SUBTITLE WITH CLEAN DARK OUTLINE CONTRAST */
     .title-sub {
       font-family: 'JetBrains Mono', 'Fira Code', monospace;
       font-size: 13.5px;
       letter-spacing: 3.5px;
       fill: #2dd4bf;
       font-weight: 700;
+      filter: drop-shadow(0 2px 4px #020812);
+    }
+
+    .sparkle-1 {
+      animation: twinkleSparkle1 3s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .sparkle-2 {
+      animation: twinkleSparkle2 3.5s ease-in-out infinite 1s;
+      transform-origin: center;
     }
   </style>
 
@@ -351,7 +374,7 @@
 
   <!-- FOREGROUND: HUD & TYPOGRAPHY -->
 
-  <!-- Top Ocean HUD Bar (Updated according to user requirements) -->
+  <!-- Top Ocean HUD Bar -->
   <g class="hud-text">
     <text x="35" y="32">DATE OF BIRTHDAY 18/06/2005</text>
     <text x="450.0" y="32" text-anchor="middle" letter-spacing="3.5px">NGUYEN QUOC KHOA</text>
@@ -359,20 +382,28 @@
   </g>
   <line x1="35" y1="40" x2="865" y2="40" stroke="#0284c7" stroke-width="0.8" opacity="0.5" />
 
-  <!-- CENTER TYPOGRAPHY SECTION WITH CRYSTAL-CLEAR READABILITY PLATE -->
+  <!-- CENTER TYPOGRAPHY SECTION: NO BOX / NO FRAME — NATURALLY FLOATING WITH GLOWING SHIMMER -->
   <g transform="translate(450.0, 150)" text-anchor="middle">
-    <!-- Sleek Glass Backdrop Capsule (Eliminates blur, guarantees 100% sharpness over swimming whale) -->
-    <rect x="-290" y="-46" width="580" height="82" rx="16" fill="url(#glassPlate)" stroke="#0284c7" stroke-width="1.2" opacity="0.95" filter="url(#crispShadow)" />
+    <!-- Twinkling Sparkle 1 (Top Left of Name) -->
+    <g transform="translate(-195, -16)">
+      <path d="M 0,-7 Q 0,0 7,0 Q 0,0 0,7 Q 0,0 -7,0 Q 0,0 0,-7 Z" fill="#2dd4bf" class="sparkle-1" />
+    </g>
 
-    <!-- Subtle Cyan Accent Lines on Capsule -->
-    <line x1="-270" y1="-46" x2="-220" y2="-46" stroke="#2dd4bf" stroke-width="2.5" />
-    <line x1="220" y1="36" x2="270" y2="36" stroke="#2dd4bf" stroke-width="2.5" />
+    <!-- Twinkling Sparkle 2 (Top Right of Name) -->
+    <g transform="translate(195, -20)">
+      <path d="M 0,-8 Q 0,0 8,0 Q 0,0 0,8 Q 0,0 -8,0 Q 0,0 0,-8 Z" fill="#38bdf8" class="sparkle-2" />
+    </g>
 
-    <!-- Main Name: NGUYEN KHOA (Crisp, pure white, strong drop shadow, NO BLURRY SMEAR) -->
-    <text y="0" class="title-name" filter="url(#crispShadow)">NGUYEN KHOA</text>
+    <!-- Twinkling Sparkle 3 (Bottom Right) -->
+    <g transform="translate(160, 22)">
+      <path d="M 0,-5 Q 0,0 5,0 Q 0,0 0,5 Q 0,0 -5,0 Q 0,0 0,-5 Z" fill="#7dd3fc" class="sparkle-1" style="animation-delay: 1.5s;" />
+    </g>
 
-    <!-- Subtitle: FULL-STACK DEVELOPER • DEEP OCEAN ARCHITECT (Bright, razor-sharp seafoam cyan) -->
-    <text y="24" class="title-sub" filter="url(#crispShadow)">FULL-STACK DEVELOPER  •  DEEP OCEAN ARCHITECT</text>
+    <!-- Main Name: NGUYEN KHOA (No Box! Shimmering, pulsing bioluminescent glow) -->
+    <text y="0" class="title-name-glow">NGUYEN KHOA</text>
+
+    <!-- Subtitle: FULL-STACK DEVELOPER • DEEP OCEAN ARCHITECT (Bright seafoam cyan, crisp drop shadow) -->
+    <text y="28" class="title-sub">FULL-STACK DEVELOPER  •  DEEP OCEAN ARCHITECT</text>
   </g>
 
   <!-- Bottom Oceanic Telemetry Line -->
