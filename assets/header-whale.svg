@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280" text-rendering="geometricPrecision" shape-rendering="geometricPrecision">
   <defs>
     <!-- Deep Ocean Gradient -->
     <linearGradient id="oceanBg" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -36,18 +36,14 @@
       <stop offset="100%" stop-color="#075985" stop-opacity="0.6" />
     </linearGradient>
 
-    <!-- Bioluminescent Glow Filter for Name -->
+    <!-- Bioluminescent Glow Filter (Dedicated to background halo only) -->
     <filter id="neonPulseGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur1" />
-      <feGaussianBlur stdDeviation="14" result="blur2" />
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="16" result="blur2" />
       <feMerge>
         <feMergeNode in="blur2" />
         <feMergeNode in="blur1" />
       </feMerge>
-    </filter>
-
-    <filter id="crispShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#020812" flood-opacity="0.95" />
     </filter>
 
     <filter id="softGlow">
@@ -157,12 +153,12 @@
     /* TWINKLING SPARKLE STARS */
     @keyframes twinkleSparkle1 {
       0%, 100% { opacity: 0.2; transform: scale(0.6) rotate(0deg); }
-      50% { opacity: 1; transform: scale(1.3) rotate(45deg); filter: drop-shadow(0 0 6px #38bdf8); }
+      50% { opacity: 1; transform: scale(1.3) rotate(45deg); }
     }
 
     @keyframes twinkleSparkle2 {
       0%, 100% { opacity: 0.2; transform: scale(0.6) rotate(45deg); }
-      50% { opacity: 1; transform: scale(1.4) rotate(90deg); filter: drop-shadow(0 0 8px #2dd4bf); }
+      50% { opacity: 1; transform: scale(1.4) rotate(90deg); }
     }
 
     .whale-swim-group {
@@ -206,28 +202,42 @@
     .b6 { animation: bubbleRise2 7.5s linear infinite 2.3s; }
     .b7 { animation: bubbleRise1 8.5s linear infinite 5s; }
 
+    /* HUD MONOSPACE - NATIVE APPLE RETINA SF MONO / MENLO */
     .hud-text {
-      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
       font-size: 11px;
       letter-spacing: 2px;
       font-weight: 700;
       fill: #38bdf8;
+      stroke: #010811;
+      stroke-width: 1.5px;
+      paint-order: stroke fill;
     }
 
+    /* MAIN TITLE - NATIVE APPLE RETINA SYSTEM FONT (RAZOR SHARP) */
     .title-name-main {
-      font-family: 'Montserrat', 'Segoe UI', -apple-system, sans-serif;
-      font-size: 40px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      font-size: 42px;
       font-weight: 900;
-      letter-spacing: 7px;
+      letter-spacing: 8px;
       fill: #ffffff;
+      stroke: #020812;
+      stroke-width: 4.5px;
+      stroke-linejoin: round;
+      paint-order: stroke fill;
     }
 
+    /* SUBTITLE - CRISP SEAFOAM CYAN WITH HIGH-CONTRAST VECTOR STROKE */
     .title-sub {
-      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
       font-size: 13.5px;
       letter-spacing: 3.5px;
       fill: #2dd4bf;
-      font-weight: 700;
+      font-weight: 800;
+      stroke: #020812;
+      stroke-width: 2.5px;
+      stroke-linejoin: round;
+      paint-order: stroke fill;
     }
 
     .sparkle-1 {
@@ -364,7 +374,7 @@
 
   <!-- FOREGROUND: HUD AND TYPOGRAPHY -->
 
-  <!-- Top Ocean HUD Bar -->
+  <!-- Top Ocean HUD Bar (High-Contrast Retina Vector Outline) -->
   <g class="hud-text">
     <text x="35" y="32">DATE OF BIRTHDAY 18/06/2005</text>
     <text x="450" y="32" text-anchor="middle" letter-spacing="3.5px">NGUYEN QUOC KHOA</text>
@@ -372,7 +382,7 @@
   </g>
   <line x1="35" y1="40" x2="865" y2="40" stroke="#0284c7" stroke-width="0.8" opacity="0.5" />
 
-  <!-- CENTER TYPOGRAPHY SECTION: NO BOX, CRISP WITH NATIVE PULSING BIOLUMINESCENT GLOW -->
+  <!-- CENTER TYPOGRAPHY SECTION: 100% RETINA SHARP VECTOR WITH PULSING GLOW HALO -->
   <g transform="translate(450, 150)" text-anchor="middle">
     <!-- Twinkling Sparkle Stars -->
     <g transform="translate(-195, -16)">
@@ -385,20 +395,20 @@
       <path d="M 0,-5 Q 0,0 5,0 Q 0,0 0,5 Q 0,0 -5,0 Q 0,0 0,-5 Z" fill="#7dd3fc" class="sparkle-1" style="animation-delay: 1.5s;" />
     </g>
 
-    <!-- Bioluminescent Pulsing Glow Layer underneath (Native SVG animate) -->
-    <text y="0" class="title-name-main" fill="#38bdf8" filter="url(#neonPulseGlow)">
+    <!-- Pulsing Bioluminescent Ambient Halo (Behind text only) -->
+    <text y="0" class="title-name-main" fill="#38bdf8" stroke="none" filter="url(#neonPulseGlow)">
       NGUYEN KHOA
-      <animate attributeName="opacity" values="0.35;0.95;0.35" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" />
       <animate attributeName="fill" values="#0284c7;#2dd4bf;#0ea5e9;#0284c7" dur="6s" repeatCount="indefinite" />
     </text>
 
-    <!-- Foreground Solid Crisp Layer with Dark High-Contrast Shadow (Always sharp!) -->
-    <text y="0" class="title-name-main" filter="url(#crispShadow)">
+    <!-- Foreground 100% Vector Sharp Layer (Zero filter rasterization! Razor-sharp on MacBook Retina) -->
+    <text y="0" class="title-name-main">
       NGUYEN KHOA
     </text>
 
-    <!-- Subtitle: FULL-STACK DEVELOPER • DEEP OCEAN ARCHITECT (Crisp, High Contrast) -->
-    <text y="28" class="title-sub" filter="url(#crispShadow)">
+    <!-- Subtitle: FULL-STACK DEVELOPER • DEEP OCEAN ARCHITECT (Razor-sharp vector stroke) -->
+    <text y="28" class="title-sub">
       FULL-STACK DEVELOPER  •  DEEP OCEAN ARCHITECT
     </text>
   </g>
@@ -407,7 +417,7 @@
   <g transform="translate(450, 236)" text-anchor="middle">
     <rect x="-250" y="-14" width="500" height="26" rx="13" fill="#041629" stroke="#0284c7" stroke-width="1" opacity="0.9" />
     <circle cx="-225" cy="-1" r="4" fill="#2dd4bf" class="b1" style="animation-duration: 2s;" />
-    <text x="5" y="3" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#7dd3fc" letter-spacing="2.5px">
+    <text x="5" y="3" font-family="ui-monospace, 'SF Mono', Menlo, Monaco, monospace" font-size="11" font-weight="700" fill="#7dd3fc" letter-spacing="2.5px" stroke="#010811" stroke-width="1.2px" paint-order="stroke fill">
       DIVING DEEP INTO COMPLEX SYSTEMS &amp; CLEAN CODE
     </text>
   </g>
