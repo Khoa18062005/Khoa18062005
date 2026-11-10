@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40">
+  <defs>
+    <linearGradient id="fbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1877f2"/>
+      <stop offset="100%" stop-color="#0a52be"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#fbGrad)"/>
+  <path fill="#ffffff" d="M29.5 25.5l.8-5.3h-5.1v-3.5c0-1.4.7-2.8 3-2.8h2.3V9.4s-2.1-.4-4.1-.4c-4.2 0-7 2.6-7 7.2v4h-4.7v5.3h4.7v13h6v-13h4.1z"/>
+</svg>

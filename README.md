@@ -35,22 +35,31 @@
 <!-- ═════════════════════ SOCIAL CONTACT CHANNELS ═════════════════════ -->
 
 <div align="center">
-  <a href="https://github.com/Khoa18062005" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Khoa18062005-0284c7?style=for-the-badge&logo=github&logoColor=white&labelColor=03192e" alt="GitHub" />
+  <a href="https://github.com/Khoa18062005" target="_blank" title="GitHub Profile">
+    <img src="./assets/icons/github.svg" width="38" height="38" alt="GitHub" />
   </a>
-  &nbsp;&nbsp;
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Nguyen%20Khoa-0284c7?style=for-the-badge&logo=linkedin&logoColor=0077b5&labelColor=03192e" alt="LinkedIn" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.facebook.com/quockhoa.nguyen.71404" target="_blank" title="Facebook Profile">
+    <img src="./assets/icons/facebook.svg" width="38" height="38" alt="Facebook" />
   </a>
-  &nbsp;&nbsp;
-  <a href="mailto:YOUR_EMAIL@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-Contact%20Me-0284c7?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=03192e" alt="Email" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/nqkhoa_lks1806/" target="_blank" title="Instagram Profile">
+    <img src="./assets/icons/instagram.svg" width="38" height="38" alt="Instagram" />
   </a>
-  &nbsp;&nbsp;
-  <a href="https://facebook.com/YOUR_FACEBOOK" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-Nguyen%20Khoa-0284c7?style=for-the-badge&logo=facebook&logoColor=1877f2&labelColor=03192e" alt="Facebook" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:nguyenquockhoa00725005@gmail.com" title="Gửi thư trực tiếp">
+    <img src="./assets/icons/gmail.svg" width="38" height="38" alt="Gmail" />
   </a>
 </div>
+
+<div align="center">
+  <br>
+  <sub>📋 <em>Nhấp vào biểu tượng copy góc phải để sao chép địa chỉ email:</em></sub>
+</div>
+
+```text
+nguyenquockhoa00725005@gmail.com
+```
 
 <br>
 
