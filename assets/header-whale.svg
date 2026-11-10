@@ -36,19 +36,22 @@
       <stop offset="100%" stop-color="#075985" stop-opacity="0.6" />
     </linearGradient>
 
-    <!-- Glow Filters -->
-    <filter id="biolumGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur1" />
-      <feGaussianBlur stdDeviation="8" result="blur2" />
-      <feMerge>
-        <feMergeNode in="blur2" />
-        <feMergeNode in="blur1" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <!-- High-Contrast Text Drop Shadow (Sharp & Readable, NO BLURRY SMEAR) -->
+    <filter id="crispShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#020812" flood-opacity="0.95" />
     </filter>
 
     <filter id="softGlow">
       <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Ambient Glow behind plate -->
+    <filter id="ambientPlateGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -61,18 +64,24 @@
       <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.6" />
       <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.3" />
     </linearGradient>
+
+    <!-- Center Card Gradient (Semi-transparent dark glass for 100% crystal readability) -->
+    <linearGradient id="glassPlate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#04182b" stop-opacity="0.82" />
+      <stop offset="100%" stop-color="#020d18" stop-opacity="0.90" />
+    </linearGradient>
   </defs>
 
   <style>
     @keyframes swimAcross {
       0% {
-        transform: translate(-380px, 40px) scale(0.95);
+        transform: translate(-380px, 35px) scale(0.95);
       }
       50% {
-        transform: translate(260px, 15px) scale(1);
+        transform: translate(260px, 10px) scale(1);
       }
       100% {
-        transform: translate(920px, 50px) scale(0.95);
+        transform: translate(920px, 45px) scale(0.95);
       }
     }
 
@@ -151,16 +160,6 @@
       }
     }
 
-    @keyframes pulseGlow {
-      0%, 100% {
-        opacity: 0.85;
-      }
-      50% {
-        opacity: 1;
-        filter: drop-shadow(0 0 14px rgba(45, 212, 191, 0.8));
-      }
-    }
-
     .whale-swim-group {
       animation: swimAcross 22s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
@@ -204,26 +203,28 @@
 
     .hud-text {
       font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
-      font-size: 10px;
+      font-size: 11px;
       letter-spacing: 2px;
+      font-weight: 700;
       fill: #38bdf8;
-      opacity: 0.75;
     }
 
+    /* CRISP, ULTRA-READABLE MAIN NAME (NO BLUR MUSH) */
     .title-name {
       font-family: 'Montserrat', 'Segoe UI', -apple-system, sans-serif;
-      font-size: 34px;
+      font-size: 38px;
       font-weight: 900;
-      letter-spacing: 6px;
+      letter-spacing: 7px;
       fill: #ffffff;
     }
 
+    /* CRISP, SHARP SUBTITLE */
     .title-sub {
       font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      font-size: 13px;
-      letter-spacing: 3px;
+      font-size: 13.5px;
+      letter-spacing: 3.5px;
       fill: #2dd4bf;
-      font-weight: 600;
+      font-weight: 700;
     }
   </style>
 
@@ -266,14 +267,13 @@
     <circle cx="810" cy="160" r="1.2" fill="#7dd3fc" />
   </g>
 
-  <!-- ANIMATED MAJESTIC BLUE WHALE -->
+  <!-- ANIMATED MAJESTIC BLUE WHALE (Swimming in Midground) -->
   <g class="whale-swim-group">
     <g class="whale-body-group">
       <!-- Ambient Whale Shadow/Glow -->
-      <ellipse cx="220" cy="90" rx="140" ry="38" fill="#0284c7" opacity="0.2" filter="url(#biolumGlow)" />
+      <ellipse cx="220" cy="90" rx="140" ry="38" fill="#0284c7" opacity="0.2" filter="url(#softGlow)" />
 
       <!-- Whale Body Silhouette (Detailed Anatomical Curvature) -->
-      <!-- Head at (360, 80), Body middle (220, 85), Tail root at (85, 85) -->
       <path d="
         M 85,85
         C 120,78 170,68 230,62
@@ -309,7 +309,6 @@
 
       <!-- Whale Blowhole with gentle breath mist -->
       <ellipse cx="320" cy="62" rx="3" ry="1.2" fill="#0369a1" />
-      <!-- Subtle vapor/bubble trace from blowhole -->
       <g opacity="0.5">
         <circle cx="318" cy="54" r="1.2" fill="#7dd3fc" />
         <circle cx="314" cy="46" r="1.8" fill="#38bdf8" />
@@ -327,7 +326,7 @@
         " fill="url(#whaleFin)" stroke="#38bdf8" stroke-width="0.8" opacity="0.9" />
       </g>
 
-      <!-- Whale Dorsal Fin (Small, falcate, set far back) -->
+      <!-- Whale Dorsal Fin -->
       <path d="
         M 130,73
         C 125,65 120,60 114,60
@@ -335,11 +334,9 @@
         Z
       " fill="#0284c7" />
 
-      <!-- Whale Tail Flukes (Notched, powerful) -->
+      <!-- Whale Tail Flukes -->
       <g class="tail-group">
-        <!-- Caudal Peduncle -->
         <path d="M 85,85 C 65,83 45,84 30,85 C 45,86 65,87 85,85 Z" fill="#0369a1" />
-        <!-- Upper & Lower Fluke Blades -->
         <path d="
           M 30,85
           C 20,70 5,60 -10,58
@@ -354,33 +351,41 @@
 
   <!-- FOREGROUND: HUD & TYPOGRAPHY -->
 
-  <!-- Top Ocean HUD Bar -->
+  <!-- Top Ocean HUD Bar (Updated according to user requirements) -->
   <g class="hud-text">
-    <text x="35" y="32">PACIFIC ABYSS // 3,820M</text>
-    <text x="450.0" y="32" text-anchor="middle" letter-spacing="4px">SONAR FREQUENCY: 20Hz (WHALE SONG)</text>
-    <text x="865" y="32" text-anchor="end">SYSTEM: DIVER_ONLINE</text>
+    <text x="35" y="32">DATE OF BIRTHDAY 18/06/2005</text>
+    <text x="450.0" y="32" text-anchor="middle" letter-spacing="3.5px">NGUYEN QUOC KHOA</text>
+    <text x="865" y="32" text-anchor="end" fill="#2dd4bf">VIET NAM</text>
   </g>
-  <line x1="35" y1="40" x2="865" y2="40" stroke="#0284c7" stroke-width="0.6" opacity="0.4" />
+  <line x1="35" y1="40" x2="865" y2="40" stroke="#0284c7" stroke-width="0.8" opacity="0.5" />
 
-  <!-- Center Typography (Deep Oceanic Theme) -->
-  <g transform="translate(450.0, 145)" text-anchor="middle">
-    <!-- Ambient glow behind name -->
-    <text y="0" class="title-name" fill="#0284c7" opacity="0.6" filter="url(#biolumGlow)">NGUYEN KHOA</text>
-    <text y="0" class="title-name" filter="url(#softGlow)">NGUYEN KHOA</text>
-    <text y="28" class="title-sub" filter="url(#softGlow)">FULL-STACK DEVELOPER  •  DEEP OCEAN ARCHITECT</text>
+  <!-- CENTER TYPOGRAPHY SECTION WITH CRYSTAL-CLEAR READABILITY PLATE -->
+  <g transform="translate(450.0, 150)" text-anchor="middle">
+    <!-- Sleek Glass Backdrop Capsule (Eliminates blur, guarantees 100% sharpness over swimming whale) -->
+    <rect x="-290" y="-46" width="580" height="82" rx="16" fill="url(#glassPlate)" stroke="#0284c7" stroke-width="1.2" opacity="0.95" filter="url(#crispShadow)" />
+
+    <!-- Subtle Cyan Accent Lines on Capsule -->
+    <line x1="-270" y1="-46" x2="-220" y2="-46" stroke="#2dd4bf" stroke-width="2.5" />
+    <line x1="220" y1="36" x2="270" y2="36" stroke="#2dd4bf" stroke-width="2.5" />
+
+    <!-- Main Name: NGUYEN KHOA (Crisp, pure white, strong drop shadow, NO BLURRY SMEAR) -->
+    <text y="0" class="title-name" filter="url(#crispShadow)">NGUYEN KHOA</text>
+
+    <!-- Subtitle: FULL-STACK DEVELOPER • DEEP OCEAN ARCHITECT (Bright, razor-sharp seafoam cyan) -->
+    <text y="24" class="title-sub" filter="url(#crispShadow)">FULL-STACK DEVELOPER  •  DEEP OCEAN ARCHITECT</text>
   </g>
 
   <!-- Bottom Oceanic Telemetry Line -->
-  <g transform="translate(450.0, 235)" text-anchor="middle">
-    <rect x="-240" y="-14" width="480" height="26" rx="13" fill="#041629" stroke="#0284c7" stroke-width="0.8" opacity="0.8" />
-    <circle cx="-215" cy="-1" r="4" fill="#2dd4bf" class="b1" style="animation-duration: 2s;" />
-    <text x="5" y="3" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#7dd3fc" letter-spacing="2.5px">
+  <g transform="translate(450.0, 236)" text-anchor="middle">
+    <rect x="-250" y="-14" width="500" height="26" rx="13" fill="#041629" stroke="#0284c7" stroke-width="1" opacity="0.9" />
+    <circle cx="-225" cy="-1" r="4" fill="#2dd4bf" class="b1" style="animation-duration: 2s;" />
+    <text x="5" y="3" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#7dd3fc" letter-spacing="2.5px">
       DIVING DEEP INTO COMPLEX SYSTEMS &amp; CLEAN CODE
     </text>
   </g>
 
   <!-- Corner Framers (Tech Oceanic Bracket Details) -->
-  <g stroke="#0284c7" stroke-width="1.5" fill="none" opacity="0.7">
+  <g stroke="#0284c7" stroke-width="1.8" fill="none" opacity="0.8">
     <polyline points="15,25 15,15 25,15" />
     <polyline points="885,25 885,15 875,15" />
     <polyline points="15,255 15,265 25,265" />
