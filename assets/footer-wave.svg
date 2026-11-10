@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="120" viewBox="0 0 850 120">
+  <defs>
+    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="wave2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="wave3Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <filter id="waveGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bubbleGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="bgGrad" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#060d18"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes waveShift1 { 0% { transform: translateX(0); } 50% { transform: translateX(-80px); } 100% { transform: translateX(0); } }
+    @keyframes waveShift2 { 0% { transform: translateX(0); } 50% { transform: translateX(60px); } 100% { transform: translateX(0); } }
+    @keyframes waveShift3 { 0% { transform: translateX(0); } 50% { transform: translateX(-50px); } 100% { transform: translateX(0); } }
+    @keyframes rise1 { 0% { transform: translateY(0); opacity: 0.6; } 100% { transform: translateY(-80px); opacity: 0; } }
+    @keyframes rise2 { 0% { transform: translateY(0); opacity: 0.5; } 100% { transform: translateY(-90px); opacity: 0; } }
+    @keyframes rise3 { 0% { transform: translateY(0); opacity: 0.4; } 100% { transform: translateY(-70px); opacity: 0; } }
+    @keyframes shimmer { 0%, 100% { opacity: 0.05; } 50% { opacity: 0.12; } }
+
+    .wave1 { animation: waveShift1 8s ease-in-out infinite; }
+    .wave2 { animation: waveShift2 6s ease-in-out infinite; }
+    .wave3 { animation: waveShift3 10s ease-in-out infinite; }
+    .bubble1 { animation: rise1 4s ease-in infinite; }
+    .bubble2 { animation: rise2 5s ease-in infinite; }
+    .bubble3 { animation: rise3 3.5s ease-in infinite; }
+    .shimmer { animation: shimmer 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="850" height="120" fill="url(#bgGrad)"/>
+
+  <!-- Shimmer overlay -->
+  <rect width="850" height="120" fill="#06b6d4" opacity="0.03" class="shimmer"/>
+
+  <!-- Wave layer 3 (back, slowest) -->
+  <g class="wave3" opacity="0.3">
+    <path d="M -100,85 C 0,60 50,95 120,75 C 190,55 230,90 300,70 C 370,50 410,85 480,68 C 550,50 590,80 660,65 C 730,50 770,80 850,60 L 950,60 L 950,120 L -100,120 Z" fill="url(#wave3Grad)"/>
+  </g>
+
+  <!-- Bubbles / particles -->
+  <g filter="url(#bubbleGlow)">
+    <circle cx="120" cy="90" r="2" fill="#14b8a6" class="bubble1" opacity="0.5" style="animation-delay:0s"/>
+    <circle cx="230" cy="85" r="1.5" fill="#06b6d4" class="bubble2" opacity="0.4" style="animation-delay:1s"/>
+    <circle cx="340" cy="92" r="2.5" fill="#0ea5e9" class="bubble1" opacity="0.5" style="animation-delay:0.5s"/>
+    <circle cx="420" cy="88" r="1.5" fill="#14b8a6" class="bubble3" opacity="0.4" style="animation-delay:2s"/>
+    <circle cx="510" cy="95" r="2" fill="#06b6d4" class="bubble2" opacity="0.5" style="animation-delay:1.5s"/>
+    <circle cx="580" cy="82" r="1.5" fill="#0ea5e9" class="bubble1" opacity="0.4" style="animation-delay:0.8s"/>
+    <circle cx="650" cy="90" r="2" fill="#14b8a6" class="bubble3" opacity="0.5" style="animation-delay:2.5s"/>
+    <circle cx="730" cy="86" r="1.5" fill="#06b6d4" class="bubble2" opacity="0.4" style="animation-delay:3s"/>
+    <circle cx="170" cy="95" r="1" fill="#0d9488" class="bubble3" opacity="0.3" style="animation-delay:1.2s"/>
+    <circle cx="290" cy="80" r="1" fill="#0ea5e9" class="bubble1" opacity="0.3" style="animation-delay:2.2s"/>
+    <circle cx="470" cy="78" r="1.5" fill="#14b8a6" class="bubble2" opacity="0.3" style="animation-delay:0.3s"/>
+    <circle cx="700" cy="82" r="1" fill="#06b6d4" class="bubble3" opacity="0.3" style="animation-delay:1.8s"/>
+    <circle cx="60" cy="88" r="1.5" fill="#0ea5e9" class="bubble1" opacity="0.4" style="animation-delay:3.2s"/>
+    <circle cx="800" cy="92" r="2" fill="#14b8a6" class="bubble2" opacity="0.4" style="animation-delay:0.7s"/>
+  </g>
+
+  <!-- Wave layer 2 (middle) -->
+  <g class="wave2" opacity="0.5">
+    <path d="M -100,90 C 30,70 80,100 150,80 C 220,60 270,95 340,78 C 410,60 450,88 520,72 C 590,55 640,85 710,70 C 780,55 820,80 950,65 L 950,120 L -100,120 Z" fill="url(#wave2Grad)" filter="url(#waveGlow)"/>
+  </g>
+
+  <!-- Wave layer 1 (front, fastest) -->
+  <g class="wave1" opacity="0.7">
+    <path d="M -100,95 C 20,80 70,105 140,88 C 210,70 260,100 330,85 C 400,68 450,95 520,80 C 590,65 640,90 710,78 C 780,65 830,88 950,75 L 950,120 L -100,120 Z" fill="url(#wave1Grad)" filter="url(#waveGlow)"/>
+  </g>
+
+  <!-- Top foam/mist line -->
+  <g class="wave1" opacity="0.15">
+    <path d="M -100,92 C 20,78 70,102 140,85 C 210,68 260,98 330,82 C 400,65 450,92 520,77 C 590,62 640,87 710,75 C 780,62 830,85 950,72" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Glow line on top wave -->
+  <g class="wave1" opacity="0.3">
+    <path d="M -100,95 C 20,80 70,105 140,88 C 210,70 260,100 330,85 C 400,68 450,95 520,80 C 590,65 640,90 710,78 C 780,65 830,88 950,75" fill="none" stroke="#06b6d4" stroke-width="1.5" filter="url(#waveGlow)"/>
+  </g>
+</svg>
