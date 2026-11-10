@@ -32,28 +32,27 @@
 
 <br>
 
-<!-- ═════════════════════ SUBMERSIBLE LOG / ABOUT ME ═════════════════════ -->
+<!-- ═════════════════════ SOCIAL CONTACT CHANNELS ═════════════════════ -->
 
 <div align="center">
-
-```
-                      .
-                     / \
-                    |   |
-                  .-'---'-.
-                 /  .-. .-.  \
-                |  (   |   )  |          _.-'''''-._
-                 \  '-' '-'  /         .'  _     _  '.
-            _..---'---------'---.._   /   (o)   (o)   \
-          .'                       '. |      ___      |
-         /    N A U T I L U S       \ \     '---'     /
-        |       K H O A              | '.  ._____.  .'
-         \   PACIFIC TRENCH 3820M   /    '-._____.-'
-          '.                       .'
-            '--.._____________..--'
-```
-
+  <a href="https://github.com/Khoa18062005" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Khoa18062005-0284c7?style=for-the-badge&logo=github&logoColor=white&labelColor=03192e" alt="GitHub" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Nguyen%20Khoa-0284c7?style=for-the-badge&logo=linkedin&logoColor=0077b5&labelColor=03192e" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:YOUR_EMAIL@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-Contact%20Me-0284c7?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=03192e" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://facebook.com/YOUR_FACEBOOK" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-Nguyen%20Khoa-0284c7?style=for-the-badge&logo=facebook&logoColor=1877f2&labelColor=03192e" alt="Facebook" />
+  </a>
 </div>
+
+<br>
 
 <table align="center" width="100%">
 <tr>
@@ -300,31 +299,9 @@ sonar_grid:
 
 ---
 
-<!-- ═══════════════════ CONNECT & EXPEDITIONS ═══════════════════ -->
+<!-- ═══════════════════ OCEAN PHILOSOPHY ═══════════════════ -->
 
 <div align="center">
-
-## ◈ Acoustic Frequencies & Contact
-
-<br>
-
-<a href="https://github.com/Khoa18062005">
-  <img src="https://img.shields.io/badge/GitHub-%40Khoa18062005-0284c7?style=for-the-badge&logo=github&logoColor=white&labelColor=03192e" alt="GitHub" />
-</a>
-&nbsp;&nbsp;
-<a href="https://linkedin.com/in/YOUR_LINKEDIN">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0284c7?style=for-the-badge&logo=linkedin&logoColor=0077B5&labelColor=03192e" alt="LinkedIn" />
-</a>
-&nbsp;&nbsp;
-<a href="mailto:YOUR_EMAIL@gmail.com">
-  <img src="https://img.shields.io/badge/Dispatch-Email-0284c7?style=for-the-badge&logo=gmail&logoColor=D14836&labelColor=03192e" alt="Email" />
-</a>
-&nbsp;&nbsp;
-<a href="https://facebook.com/YOUR_FACEBOOK">
-  <img src="https://img.shields.io/badge/Social-Facebook-0284c7?style=for-the-badge&logo=facebook&logoColor=1877F2&labelColor=03192e" alt="Facebook" />
-</a>
-
-<br><br>
 
 <!-- Ocean Quote -->
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The%20sea%2C%20once%20it%20casts%20its%20spell%2C%20holds%20one%20in%20its%20net%20of%20wonder%20forever.&author=Jacques%20Cousteau" alt="Ocean Quote" width="65%" />
