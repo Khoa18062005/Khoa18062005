@@ -119,96 +119,27 @@ network:
 <br>
 
 <div align="center">
-<table>
-<tr>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="48" height="48" />
+
+## 🛠️ Technological Arsenal
+
+<br>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,python,java,react,nextjs,tailwind,html,css&theme=dark" alt="Languages & Frontend" />
   </a>
-  <br><strong>JavaScript</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="48" height="48" />
+</p>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,spring,postgres,mysql,redis,mongodb&theme=dark" alt="Backend & Databases" />
   </a>
-  <br><strong>TypeScript</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="48" height="48" />
+</p>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=docker,aws,git,github,postman,graphql,nginx,linux,vscode&theme=dark" alt="DevOps & Tools" />
   </a>
-  <br><strong>Python</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="48" height="48" />
-  </a>
-  <br><strong>Java</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="48" height="48" />
-  </a>
-  <br><strong>React</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="48" height="48" />
-  </a>
-  <br><strong>Docker</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="48" height="48" />
-  </a>
-  <br><strong>AWS</strong>
-</td>
-</tr>
-<tr>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="48" height="48" />
-  </a>
-  <br><strong>GitHub</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="REST API" width="48" height="48" />
-  </a>
-  <br><strong>REST API</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/graphql-icon.svg" alt="GraphQL" width="48" height="48" />
-  </a>
-  <br><strong>GraphQL</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="48" height="48" />
-  </a>
-  <br><strong>MySQL</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="48" height="48" />
-  </a>
-  <br><strong>Nginx</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/prettier-icon.svg" alt="Prettier" width="48" height="48" />
-  </a>
-  <br><strong>Prettier</strong>
-</td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://techstack-generator.vercel.app/webpack-icon.svg" alt="Webpack" width="48" height="48" />
-  </a>
-  <br><strong>Webpack</strong>
-</td>
-</tr>
-</table>
+</p>
+
 </div>
 
 <br>
@@ -324,34 +255,11 @@ network:
 <br>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Khoa18062005&show_icons=true&theme=transparent&hide_border=true&title_color=06b6d4&text_color=a5f3fc&icon_color=14b8a6&bg_color=0a0e17&ring_color=06b6d4" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Khoa18062005&show_icons=true&theme=default&hide_border=true" />
-    <img src="https://github-readme-stats.vercel.app/api?username=Khoa18062005&show_icons=true&theme=transparent&hide_border=true&title_color=06b6d4&text_color=a5f3fc&icon_color=14b8a6&bg_color=0a0e17&ring_color=06b6d4" alt="GitHub Stats" width="48%" />
-  </picture>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Khoa18062005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=06b6d4&icon_color=14b8a6&text_color=a5f3fc" alt="GitHub Stats" width="48.5%" />
   &nbsp;
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=06b6d4&fire=14b8a6&currStreakLabel=06b6d4&sideLabels=a5f3fc&currStreakNum=a5f3fc&sideNums=a5f3fc&dates=4a5568&background=0a0e17" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=Khoa18062005&theme=default&hide_border=true" />
-    <img src="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=06b6d4&fire=14b8a6&currStreakLabel=06b6d4&sideLabels=a5f3fc&currStreakNum=a5f3fc&sideNums=a5f3fc&dates=4a5568&background=0a0e17" alt="GitHub Streak" width="48%" />
-  </picture>
-</div>
-
-<br>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Khoa18062005&layout=donut-vertical&theme=transparent&hide_border=true&title_color=06b6d4&text_color=a5f3fc&bg_color=0a0e17" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Khoa18062005&layout=donut-vertical&theme=default&hide_border=true" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khoa18062005&layout=donut-vertical&theme=transparent&hide_border=true&title_color=06b6d4&text_color=a5f3fc&bg_color=0a0e17" alt="Top Languages" width="35%" />
-  </picture>
-</div>
-
-<br>
-
-<!-- GitHub Activity Graph - full width -->
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Khoa18062005&theme=react-dark&hide_border=true&bg_color=0a0e17&color=06b6d4&line=14b8a6&point=a5f3fc&area=true&area_color=0e7490" alt="Contribution Graph" width="98%" />
+  <img src="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=06b6d4&fire=14b8a6&currStreakLabel=06b6d4&sideLabels=a5f3fc&currStreakNum=a5f3fc&sideNums=a5f3fc&dates=4a5568&background=0a0e17" alt="GitHub Streak" width="48.5%" />
+  <br><br>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Khoa18062005&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=06b6d4&text_color=a5f3fc" alt="Top Languages" width="55%" />
 </div>
 
 ---
@@ -409,25 +317,13 @@ network:
 
 <br><br>
 
-<!-- Spotify / Quote widget -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20best%20error%20message%20is%20the%20one%20that%20never%20shows%20up.&author=Thomas%20Fuchs&border=true" alt="Dev Quote" width="70%" />
+<!-- Spotify / Dev Quote widget -->
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=First%2C%20solve%20the%20problem.%20Then%2C%20write%20the%20code.&author=John%20Johnson" alt="Dev Quote" width="65%" />
 
 <br><br>
 
-<!-- Random dev meme -->
-<img src="https://randommeme-five.vercel.app/" alt="Random Dev Meme" width="45%" />
-
-</div>
-
----
-
-<!-- ═══════════════════ TROPHY CASE ═══════════════════ -->
-
-<div align="center">
-
-## 🏆 Trophy Case
-
-  <img src="https://github-profile-trophy.vercel.app/?username=Khoa18062005&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies" width="98%" />
+<!-- Cyberpunk Coding Animation -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="420" alt="Cyberpunk Workspace" />
 
 </div>
 
