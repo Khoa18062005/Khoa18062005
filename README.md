@@ -132,7 +132,7 @@ gem_sonar:
 <div align="center">
 
 <!-- Gem Tech Sonar Scanner -->
-  <img src="./assets/gem-radar.svg" alt="Gem Sonar Radar" width="95%" />
+  <img src="./assets/gem-radar.svg" alt="Gem Sonar Radar" width="100%" />
 
 </div>
 
