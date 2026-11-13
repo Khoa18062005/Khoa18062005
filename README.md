@@ -12,16 +12,9 @@
 
 <div align="center">
 
-  <!-- Steven Avatar circular portrait -->
-  <a href="https://github.com/Khoa18062005">
-    <img src="./assets/steven-avatar.jpg" alt="Steven Universe Avatar" width="125" height="125" style="border-radius: 50%; border: 3.5px solid #f43f5e; box-shadow: 0 0 24px rgba(244, 63, 94, 0.7);" />
-  </a>
-
-  <br><br>
-
   <!-- Animated Typing Subtitle -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fredoka+One&weight=700&size=21&duration=3000&pause=1000&color=F43F5E&center=true&vCenter=true&multiline=true&repeat=true&width=780&height=70&lines=Believe+in+Steven+%E2%80%A2+Engineering+resilient+distributed+systems;Crafting+scalable+full-stack+fusions+with+clean+code" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fredoka+One&weight=700&size=20&duration=3500&pause=1000&color=F43F5E&center=true&vCenter=true&repeat=true&width=780&height=50&lines=Turning+complex+problems+into+simple%2C+scalable+solutions" alt="Typing SVG" />
   </a>
 
   <br>
@@ -330,15 +323,5 @@ gem_sonar:
 
 <div align="center">
   <br>
-  
-  ```
-                   ★
-               .---★---.
-              /    |    \
-             |  ( ★ )    |   CRYSTAL GEM CORE DETECTED:
-              \    |    /    BELIEVE IN STEVEN • RESILIENT • LIMITLESS
-               '---★---'
-  ```
-  
   <sub>★ We will always find a way — Crafting resilient systems with empathy, fusion, and clean architecture ★</sub>
 </div>

@@ -61,15 +61,6 @@
       <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.5" />
       <stop offset="100%" stop-color="#9333ea" stop-opacity="0" />
     </linearGradient>
-
-    <!-- Soft Filter -->
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
@@ -93,13 +84,17 @@
         filter: drop-shadow(0 0 26px rgba(244, 63, 94, 0.95)) drop-shadow(0 0 10px #fde047);
       }
     }
-    @keyframes gemBobUp {
+    @keyframes floatFoot1 {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-7px); }
     }
-    @keyframes gemBobDown {
+    @keyframes floatFoot2 {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(7px); }
+    }
+    @keyframes floatFoot3 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
     }
     @keyframes twinkleSoft {
       0%, 100% { opacity: 0.25; transform: scale(0.8); }
@@ -114,15 +109,42 @@
 
     .wave-back { animation: waveFlow1 8s ease-in-out infinite; }
     .wave-mid { animation: waveFlow2 10s ease-in-out infinite; }
-    .shield-center { transform-origin: 475px 84px; animation: shieldPulse 5s ease-in-out infinite; }
+    .shield-center {
+      transform-origin: 475px 84px;
+      animation: shieldPulse 5s ease-in-out infinite;
+    }
     
-    /* Dedicated inner-group bobbing animations (safe from CSS transform overwrite) */
-    .bob-1 { animation: gemBobUp 3.6s ease-in-out infinite; }
-    .bob-2 { animation: gemBobDown 4.2s ease-in-out infinite 0.4s; }
-    .bob-3 { animation: gemBobUp 3.8s ease-in-out infinite 0.8s; }
-    .bob-4 { animation: gemBobDown 4.4s ease-in-out infinite 1.2s; }
-    .bob-5 { animation: gemBobUp 4.0s ease-in-out infinite 1.6s; }
-    .bob-6 { animation: gemBobDown 3.7s ease-in-out infinite 2.0s; }
+    /* Absolute positioned gemstones with dedicated drop-shadows and bobbing */
+    .gem-peridot-foot {
+      transform-origin: 220px 84px;
+      animation: floatFoot1 4.5s ease-in-out infinite;
+      filter: drop-shadow(0 0 10px rgba(163, 230, 53, 0.85));
+    }
+    .gem-sapphire-foot {
+      transform-origin: 305px 84px;
+      animation: floatFoot2 5.0s ease-in-out infinite 0.4s;
+      filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.85));
+    }
+    .gem-ruby-foot {
+      transform-origin: 390px 84px;
+      animation: floatFoot3 4.2s ease-in-out infinite 0.8s;
+      filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.85));
+    }
+    .gem-rose-foot {
+      transform-origin: 560px 84px;
+      animation: floatFoot1 4.8s ease-in-out infinite 1.2s;
+      filter: drop-shadow(0 0 10px rgba(244, 63, 94, 0.85));
+    }
+    .gem-pearl-foot {
+      transform-origin: 645px 84px;
+      animation: floatFoot2 4.4s ease-in-out infinite 1.6s;
+      filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.85));
+    }
+    .gem-amethyst-foot {
+      transform-origin: 730px 84px;
+      animation: floatFoot3 5.2s ease-in-out infinite 2.0s;
+      filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.85));
+    }
 
     .twinkle-1 { animation: twinkleSoft 3s ease-in-out infinite; }
     .twinkle-2 { animation: twinkleSoft 4s ease-in-out infinite 1.5s; }
@@ -175,45 +197,40 @@
 
   <!-- ═══════════════ HORIZONTAL CONSTELLATION: SHIELD CENTER ═══════════════ -->
 
-  <!-- [LEFT 1] Peridot (Lime Inverted Triangle, Far Left) -->
-  <g transform="translate(200, 84)">
-    <g class="bob-1">
-      <g filter="url(#softGlow)">
-        <polygon points="-11,-11 11,-11 0,11" fill="#84cc16" stroke="#ecfccb" stroke-width="1.6"/>
-        <polygon points="-6,-8 6,-8 0,4" fill="#bef264"/>
-        <polygon points="-11,-11 -6,-8 0,4 0,11" fill="#65a30d" opacity="0.7"/>
-      </g>
-    </g>
+  <!-- [LEFT 1] Peridot (Lime Inverted Faceted Triangle, Center: 220, 84) -->
+  <g class="gem-peridot-foot">
+    <!-- Top Highlight Facet -->
+    <polygon points="208,73 232,73 226,78 214,78" fill="#d9f99d"/>
+    <!-- Left Green Facet -->
+    <polygon points="208,73 214,78 220,90 220,95" fill="#84cc16"/>
+    <!-- Right Dark Green Facet -->
+    <polygon points="232,73 226,78 220,90 220,95" fill="#65a30d"/>
+    <!-- Center Bright Lime Table -->
+    <polygon points="214,78 226,78 220,90" fill="#bef264"/>
+    <!-- Outer Outline -->
+    <polygon points="208,73 232,73 220,95" fill="none" stroke="#ecfccb" stroke-width="1.6" stroke-linejoin="round"/>
   </g>
 
-  <!-- [LEFT 2] Sapphire (Blue Triangle, Mid Left) -->
-  <g transform="translate(285, 84)">
-    <g class="bob-2">
-      <g filter="url(#softGlow)">
-        <polygon points="0,-11 11,8 -11,8" fill="#2563eb" stroke="#93c5fd" stroke-width="1.6"/>
-        <polygon points="0,-11 0,8 11,8" fill="#1d4ed8" opacity="0.8"/>
-        <polygon points="0,-11 -6,3 0,8" fill="#60a5fa" opacity="0.9"/>
-      </g>
-    </g>
+  <!-- [LEFT 2] Sapphire (Blue Upward Faceted Triangle, Center: 305, 84) -->
+  <g class="gem-sapphire-foot">
+    <polygon points="305,73 316,94 294,94" fill="#2563eb" stroke="#93c5fd" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="305,73 305,94 316,94" fill="#1d4ed8" opacity="0.8"/>
+    <polygon points="305,73 299,88 305,94" fill="#60a5fa" opacity="0.9"/>
   </g>
 
-  <!-- [LEFT 3] Ruby (Red Diamond Square, Inner Left) -->
-  <g transform="translate(370, 84)">
-    <g class="bob-3">
-      <g filter="url(#softGlow)">
-        <rect x="-10" y="-10" width="20" height="20" rx="3" transform="rotate(45)" fill="#dc2626" stroke="#fca5a5" stroke-width="1.6"/>
-        <polygon points="0,-13 7,0 0,13" fill="#ef4444" opacity="0.75"/>
-        <polygon points="0,-13 -7,0 0,13" fill="#b91c1c" opacity="0.75"/>
-      </g>
-    </g>
+  <!-- [LEFT 3] Ruby (Red Diamond Square, Center: 390, 84) -->
+  <g class="gem-ruby-foot">
+    <polygon points="390,71 403,84 390,97 377,84" fill="#dc2626" stroke="#fca5a5" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="390,71 403,84 390,97" fill="#b91c1c" opacity="0.8"/>
+    <polygon points="390,71 397,84 390,97" fill="#ef4444" opacity="0.85"/>
   </g>
 
-  <!-- [CENTER] Steven's Rose Quartz Shield (Prominent, Central Anchor) -->
+  <!-- [CENTER] Steven's Rose Quartz Shield (Prominent Central Anchor, Center: 475, 84) -->
   <g class="shield-center">
     <!-- Outer Shield Body -->
     <circle cx="475" cy="84" r="44" fill="url(#roseShieldBg)" stroke="#fbcfe8" stroke-width="3"/>
 
-    <!-- Rose's Thorny Spiral / Dashed Ring Motif -->
+    <!-- Rose's Thorny Spiral Motif -->
     <circle cx="475" cy="84" r="36" fill="none" stroke="#be185d" stroke-width="2.2" stroke-dasharray="9 5" opacity="0.8"/>
     
     <!-- Inner Rose Circle -->
@@ -224,40 +241,28 @@
              fill="url(#starGoldFooter)" stroke="#ffffff" stroke-width="1.4" stroke-linejoin="round"/>
   </g>
 
-  <!-- [RIGHT 1] Rose Quartz (Faceted Pink Diamond, Inner Right) -->
-  <g transform="translate(580, 84)">
-    <g class="bob-4">
-      <g filter="url(#softGlow)">
-        <polygon points="0,-13 13,-4 9,12 -9,12 -13,-4" fill="#f43f5e" stroke="#fbcfe8" stroke-width="1.6"/>
-        <polygon points="0,-13 0,12 9,12 13,-4" fill="#fb7185" opacity="0.85"/>
-        <polygon points="0,-13 -9,12 0,12" fill="#fda4af" opacity="0.95"/>
-      </g>
-    </g>
+  <!-- [RIGHT 1] Rose Quartz (Faceted Pink Diamond/Pentagon, Center: 560, 84) -->
+  <g class="gem-rose-foot">
+    <polygon points="560,71 573,80 569,96 551,96 547,80" fill="#f43f5e" stroke="#fbcfe8" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="560,71 560,96 569,96 573,80" fill="#fb7185" opacity="0.85"/>
+    <polygon points="560,71 551,96 560,96" fill="#fda4af" opacity="0.95"/>
   </g>
 
-  <!-- [RIGHT 2] Pearl (Iridescent Cyan/White Oval, Mid Right) -->
-  <g transform="translate(665, 84)">
-    <g class="bob-5">
-      <g filter="url(#softGlow)">
-        <ellipse cx="0" cy="0" rx="9.5" ry="14" fill="#e0f2fe" stroke="#38bdf8" stroke-width="1.8"/>
-        <ellipse cx="-2.5" cy="-3.5" rx="3" ry="6" fill="#ffffff" opacity="0.9"/>
-      </g>
-    </g>
+  <!-- [RIGHT 2] Pearl (Iridescent Cyan/White Oval, Center: 645, 84) -->
+  <g class="gem-pearl-foot">
+    <ellipse cx="645" cy="84" rx="10" ry="15" fill="#e0f2fe" stroke="#38bdf8" stroke-width="1.8"/>
+    <ellipse cx="642" cy="80" rx="3.5" ry="7" fill="#ffffff" opacity="0.9"/>
   </g>
 
-  <!-- [RIGHT 3] Amethyst (Faceted Purple Hexagon, Far Right) -->
-  <g transform="translate(750, 84)">
-    <g class="bob-6">
-      <g filter="url(#softGlow)">
-        <polygon points="0,-12 12,-6 12,6 0,12 -12,6 -12,-6" fill="#9333ea" stroke="#d8b4fe" stroke-width="1.6"/>
-        <polygon points="0,-12 0,12 12,6 12,-6" fill="#a855f7" opacity="0.85"/>
-        <polygon points="0,0 -12,6 0,-12" fill="#c084fc" opacity="0.95"/>
-      </g>
-    </g>
+  <!-- [RIGHT 3] Amethyst (Faceted Purple Hexagon, Center: 730, 84) -->
+  <g class="gem-amethyst-foot">
+    <polygon points="730,72 742,78 742,90 730,96 718,90 718,78" fill="#9333ea" stroke="#d8b4fe" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="730,72 730,96 742,90 742,78" fill="#a855f7" opacity="0.85"/>
+    <polygon points="730,84 718,90 730,72" fill="#c084fc" opacity="0.95"/>
   </g>
 
   <!-- Floating Rose Petals rising into the cosmos -->
-  <g fill="#f472b6" opacity="0.75" filter="url(#softGlow)">
+  <g fill="#f472b6" opacity="0.75" style="filter: drop-shadow(0 0 6px #f472b6);">
     <ellipse cx="440" cy="150" rx="5" ry="2.8" class="petal-float1"/>
     <ellipse cx="510" cy="142" rx="4.5" ry="2.5" class="petal-float2"/>
   </g>
