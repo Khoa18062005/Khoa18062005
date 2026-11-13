@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 320" width="100%" height="320" text-rendering="geometricPrecision" shape-rendering="geometricPrecision">
+  <defs>
+    <!-- Cosmic Crystal Night Gradient -->
+    <linearGradient id="gemCosmos" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0518"/>
+      <stop offset="30%" stop-color="#180b33"/>
+      <stop offset="60%" stop-color="#2d0f4d"/>
+      <stop offset="85%" stop-color="#4a155e"/>
+      <stop offset="100%" stop-color="#150824"/>
+    </linearGradient>
+
+    <!-- Rose Quartz Shield Radial Gradient -->
+    <radialGradient id="roseShieldBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe4ec"/>
+      <stop offset="25%" stop-color="#f472b6"/>
+      <stop offset="60%" stop-color="#ec4899"/>
+      <stop offset="85%" stop-color="#db2777"/>
+      <stop offset="100%" stop-color="#9d174d"/>
+    </radialGradient>
+
+    <!-- Star Gold Gradient -->
+    <linearGradient id="starGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#fde047"/>
+      <stop offset="70%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+
+    <!-- Shield Glow Gradient (Pure Radial, no rectangular artifacts) -->
+    <radialGradient id="shieldAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#f43f5e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes shieldPulse {
+      0%, 100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 14px rgba(244, 63, 94, 0.65)); }
+      50% { transform: scale(1.03) rotate(3deg); filter: drop-shadow(0 0 26px rgba(251, 191, 36, 0.8)); }
+    }
+    @keyframes floatGem1 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(8deg); }
+    }
+    @keyframes floatGem2 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-14px) rotate(-10deg); }
+    }
+    @keyframes floatGem3 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(6deg); }
+    }
+    @keyframes floatGem4 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-11px) rotate(-8deg); }
+    }
+    @keyframes sparkleTwinkle {
+      0%, 100% { opacity: 0.2; transform: scale(0.7); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+    @keyframes beamFlow {
+      0% { opacity: 0.15; transform: translateY(-5px); }
+      50% { opacity: 0.45; transform: translateY(5px); }
+      100% { opacity: 0.15; transform: translateY(-5px); }
+    }
+    @keyframes petalFloat {
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      100% { transform: translate(120px, 80px) rotate(180deg); opacity: 0; }
+    }
+
+    .shield-group { transform-origin: 155px 160px; animation: shieldPulse 6s ease-in-out infinite; }
+    .star-inner { transform-origin: 155px 160px; filter: drop-shadow(0 0 8px #fde047); }
+
+    /* Gem drop-shadow styling (eliminates all rectangular bounding box artifacts) */
+    .gem-rose {
+      transform-origin: 860px 70px;
+      animation: floatGem1 5s ease-in-out infinite;
+      filter: drop-shadow(0 0 12px rgba(244, 63, 94, 0.75));
+    }
+    .gem-pearl {
+      transform-origin: 900px 170px;
+      animation: floatGem3 4.5s ease-in-out infinite;
+      filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.8));
+    }
+    .gem-amethyst {
+      transform-origin: 790px 240px;
+      animation: floatGem2 6s ease-in-out infinite;
+      filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.75));
+    }
+    .gem-garnet {
+      transform-origin: 730px 100px;
+      animation: floatGem1 5.5s ease-in-out infinite;
+      filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.65));
+    }
+    .gem-peridot {
+      transform-origin: 815px 152px;
+      animation: floatGem4 5.2s ease-in-out infinite 0.8s;
+      filter: drop-shadow(0 0 12px rgba(163, 230, 53, 0.85));
+    }
+
+    .twinkle-1 { animation: sparkleTwinkle 2.5s ease-in-out infinite; }
+    .twinkle-2 { animation: sparkleTwinkle 3.5s ease-in-out infinite 1s; }
+    .twinkle-3 { animation: sparkleTwinkle 2s ease-in-out infinite 0.5s; }
+    .cosmic-beam { animation: beamFlow 7s ease-in-out infinite; }
+    .petal-1 { animation: petalFloat 8s linear infinite; }
+    .petal-2 { animation: petalFloat 10s linear infinite 3s; }
+  </style>
+
+  <!-- Cosmic Background -->
+  <rect width="950" height="320" rx="16" fill="url(#gemCosmos)"/>
+
+  <!-- Starry Background Grid & Twinkling Stars -->
+  <g fill="#ffffff">
+    <circle cx="60" cy="40" r="1.5" class="twinkle-1" opacity="0.8"/>
+    <circle cx="120" cy="90" r="1" class="twinkle-2" opacity="0.6"/>
+    <circle cx="210" cy="30" r="2" class="twinkle-3" opacity="0.9"/>
+    <circle cx="340" cy="70" r="1.5" class="twinkle-1" opacity="0.7"/>
+    <circle cx="430" cy="35" r="1" class="twinkle-2" opacity="0.5"/>
+    <circle cx="520" cy="80" r="2" class="twinkle-3" opacity="0.9"/>
+    <circle cx="610" cy="30" r="1.5" class="twinkle-1" opacity="0.7"/>
+    <circle cx="700" cy="65" r="1" class="twinkle-2" opacity="0.6"/>
+    <circle cx="820" cy="30" r="2" class="twinkle-3" opacity="0.8"/>
+    <circle cx="910" cy="85" r="1.5" class="twinkle-1" opacity="0.7"/>
+
+    <circle cx="45" cy="230" r="1" class="twinkle-3" opacity="0.5"/>
+    <circle cx="180" cy="270" r="2" class="twinkle-1" opacity="0.8"/>
+    <circle cx="310" cy="260" r="1" class="twinkle-2" opacity="0.6"/>
+    <circle cx="480" cy="285" r="2" class="twinkle-3" opacity="0.9"/>
+    <circle cx="650" cy="275" r="1.5" class="twinkle-1" opacity="0.7"/>
+    <circle cx="840" cy="280" r="1" class="twinkle-2" opacity="0.6"/>
+  </g>
+
+  <!-- Cosmic Starlight Beams / Galaxy Warp Rays -->
+  <g class="cosmic-beam" opacity="0.25">
+    <polygon points="120,0 260,0 200,320 60,320" fill="url(#starGold)" opacity="0.08"/>
+    <polygon points="500,0 720,0 600,320 380,320" fill="#ec4899" opacity="0.12"/>
+    <polygon points="760,0 950,0 850,320 660,320" fill="#a855f7" opacity="0.1"/>
+  </g>
+
+  <!-- Left: Steven's Rose Quartz Shield Artifact -->
+  <g class="shield-group">
+    <!-- Soft Outer Shield Radial Glow (no box clip) -->
+    <circle cx="155" cy="160" r="115" fill="url(#shieldAura)"/>
+    <circle cx="155" cy="160" r="86" fill="url(#roseShieldBg)" stroke="#fbcfe8" stroke-width="4"/>
+
+    <!-- Shield Spiral Motif (Rose's Thorny Spiral) -->
+    <circle cx="155" cy="160" r="72" fill="none" stroke="#be185d" stroke-width="3" stroke-dasharray="14 8" opacity="0.7"/>
+    <circle cx="155" cy="160" r="56" fill="#fda4af" stroke="#ffffff" stroke-width="2.5" opacity="0.9"/>
+
+    <!-- Steven's Iconic Golden Star (Clean, without center red dot) -->
+    <g class="star-inner">
+      <polygon points="155,116 166,146 198,147 173,166 182,197 155,178 128,197 137,166 112,147 144,146" fill="url(#starGold)" stroke="#ffffff" stroke-width="1.8"/>
+    </g>
+  </g>
+
+  <!-- Floating Crystal Gems (Top Right & Right - No filter box artifacts) -->
+  <!-- 1. Rose Quartz / Pink Diamond -->
+  <g class="gem-rose">
+    <polygon points="860,50 882,65 874,92 846,92 838,65" fill="#f43f5e" stroke="#fbcfe8" stroke-width="1.8"/>
+    <polygon points="860,50 860,92 874,92 882,65" fill="#fb7185" opacity="0.7"/>
+    <polygon points="860,50 846,92 860,92" fill="#fda4af" opacity="0.9"/>
+  </g>
+
+  <!-- 2. Pearl's Gem (Iridescent Oval) -->
+  <g class="gem-pearl">
+    <ellipse cx="900" cy="170" rx="14" ry="20" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2"/>
+    <ellipse cx="897" cy="165" rx="5" ry="9" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- 3. Amethyst's Gem (Hexagonal Facet) -->
+  <g class="gem-amethyst">
+    <polygon points="790,225 808,235 808,255 790,265 772,255 772,235" fill="#9333ea" stroke="#d8b4fe" stroke-width="2"/>
+    <polygon points="790,225 790,265 808,255 808,235" fill="#a855f7" opacity="0.8"/>
+    <polygon points="790,245 772,235 790,225" fill="#c084fc" opacity="0.9"/>
+  </g>
+
+  <!-- 4. Garnet's Gems (Ruby & Sapphire) -->
+  <g class="gem-garnet">
+    <!-- Ruby (Square Red) -->
+    <rect x="718" y="90" width="20" height="20" rx="3" transform="rotate(45 728 100)" fill="#dc2626" stroke="#fca5a5" stroke-width="1.8"/>
+    <!-- Sapphire (Triangle Blue) -->
+    <polygon points="750,92 762,112 738,112" fill="#2563eb" stroke="#93c5fd" stroke-width="1.8"/>
+  </g>
+
+  <!-- 5. Peridot's Gem (Inverted Faceted Triangle) -->
+  <g class="gem-peridot">
+    <!-- Top Highlight Facet -->
+    <polygon points="801,138 829,138 822,143 808,143" fill="#d9f99d"/>
+    <!-- Left Green Facet -->
+    <polygon points="801,138 808,143 815,157 815,166" fill="#84cc16"/>
+    <!-- Right Dark Green Facet -->
+    <polygon points="829,138 822,143 815,157 815,166" fill="#65a30d"/>
+    <!-- Center Bright Lime Table -->
+    <polygon points="808,143 822,143 815,157" fill="#bef264"/>
+    <!-- Outer Triangle Outline -->
+    <polygon points="801,138 829,138 815,166" fill="none" stroke="#ecfccb" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Center-Right: Bespoke Developer Identity Lockup -->
+  <g transform="translate(285, 0)">
+    
+    <!-- Top Sleek Eyebrow Tag -->
+    <g transform="translate(0, 44)">
+      <polygon points="0,7 4,3 8,7 4,11" fill="#fde047"/>
+      <text x="14" y="9" font-family="'Segoe UI', -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#fbcfe8" letter-spacing="2">
+        CRYSTAL GEM SYSTEM · 2026
+      </text>
+    </g>
+
+    <!-- Main Name Title: NGUYEN KHOA -->
+    <text x="0" y="112" font-family="'Segoe UI', -apple-system, 'Helvetica Neue', sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="1.5" filter="url(#textGlow)">
+      NGUYEN KHOA
+    </text>
+
+    <!-- Subtitle Role -->
+    <text x="0" y="144" font-family="'Segoe UI', -apple-system, sans-serif" font-size="15.5" font-weight="700" fill="#fde047" letter-spacing="1">
+      FULL-STACK ENGINEER &amp; SYSTEM FUSIONIST
+    </text>
+
+    <!-- Modern Metadata Micro-Cards (Custom Vector Line Icons, Zero Emojis) -->
+    <g transform="translate(0, 168)">
+      <!-- Card 1: University (HCM-UTE) -->
+      <g>
+        <rect x="0" y="0" width="208" height="30" rx="6" fill="#1b0e33" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1"/>
+        <!-- Custom Academic Cap Vector Glyph -->
+        <g transform="translate(10, 7)">
+          <path d="M1 5 L8 2 L15 5 L8 8 Z" fill="none" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4 6.5 L4 10.5 C4 11.8 5.8 13 8 13 C10.2 13 12 11.8 12 10.5 L12 6.5" fill="none" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round"/>
+          <line x1="15" y1="5" x2="15" y2="10" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round"/>
+        </g>
+        <text x="34" y="19" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#e0f2fe" letter-spacing="0.3">
+          HCM-UTE · IT Student
+        </text>
+      </g>
+
+      <!-- Card 2: Location (Dong Nai, Vietnam) -->
+      <g transform="translate(218, 0)">
+        <rect x="0" y="0" width="186" height="30" rx="6" fill="#1b0e33" stroke="#f472b6" stroke-opacity="0.4" stroke-width="1"/>
+        <!-- Custom Geometric Pin Vector Glyph -->
+        <g transform="translate(10, 7)">
+          <path d="M7.5 1 C5 1 3 3 3 5.5 C3 9 7.5 13.5 7.5 13.5 C7.5 13.5 12 9 12 5.5 C12 3 10 1 7.5 1 Z" fill="none" stroke="#f472b6" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="7.5" cy="5.5" r="1.3" fill="#f472b6"/>
+        </g>
+        <text x="30" y="19" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#fce7f3" letter-spacing="0.3">
+          Dong Nai, Vietnam
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Tech Focus Line -->
+    <g transform="translate(0, 222)">
+      <!-- Subtle Accent Divider Line -->
+      <line x1="0" y1="0" x2="404" y2="0" stroke="#f472b6" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="3 3"/>
+      
+      <!-- Specialty Architecture Focus -->
+      <text x="0" y="20" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#fde047" letter-spacing="0.4">
+        ★ ARCHITECTURE: HIGH-CONCURRENCY &amp; DISTRIBUTED SHIELDING
+      </text>
+      <text x="0" y="38" font-family="'Segoe UI', sans-serif" font-size="11" fill="#bae6fd" opacity="0.8">
+        Ho Chi Minh City University of Technology and Education
+      </text>
+    </g>
+
+  </g>
+
+  <!-- Floating Rose Petals -->
+  <g fill="#f472b6" opacity="0.7">
+    <ellipse cx="260" cy="140" rx="7" ry="4" class="petal-1"/>
+    <ellipse cx="440" cy="90" rx="6" ry="3" class="petal-2"/>
+    <ellipse cx="710" cy="180" rx="8" ry="4" class="petal-1"/>
+  </g>
+</svg>

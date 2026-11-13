@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="templeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#180b33" />
+      <stop offset="35%" stop-color="#2a0f4a" />
+      <stop offset="70%" stop-color="#160829" />
+      <stop offset="100%" stop-color="#0b0318" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="gemCardBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d1354" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#190b33" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Layer Indicator Gradient -->
+    <linearGradient id="crystalScaleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="30%" stop-color="#fde047" />
+      <stop offset="65%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Star Glow Filter -->
+    <filter id="gemGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="cardGlow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#f43f5e" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes scannerPulse {
+      0% { transform: translateY(0px); opacity: 0; }
+      15% { opacity: 0.9; }
+      85% { opacity: 0.9; }
+      100% { transform: translateY(330px); opacity: 0; }
+    }
+    @keyframes starBlinkPulse {
+      0%, 100% {
+        opacity: 0.85;
+        filter: drop-shadow(0 0 5px rgba(253, 224, 71, 0.75));
+        transform: scale(1);
+      }
+      50% {
+        opacity: 1;
+        filter: drop-shadow(0 0 14px rgba(244, 63, 94, 0.95)) drop-shadow(0 0 7px #fde047);
+        transform: scale(1.06);
+      }
+    }
+    @keyframes sparkleTwinkle {
+      0%, 100% { opacity: 0.2; transform: scale(0.7); }
+      50% { opacity: 0.95; transform: scale(1.3); }
+    }
+
+    .scan-line { animation: scannerPulse 4.5s ease-in-out infinite; }
+    .left-bar-star {
+      transform-origin: 27px 23px;
+      animation: starBlinkPulse 2.5s ease-in-out infinite;
+    }
+    .twinkle-1 { animation: sparkleTwinkle 2.5s ease-in-out infinite; }
+    .twinkle-2 { animation: sparkleTwinkle 3.5s ease-in-out infinite 1s; }
+    .twinkle-3 { animation: sparkleTwinkle 2s ease-in-out infinite 0.5s; }
+
+    .mono { font-family: 'Courier New', monospace; }
+    .sans { font-family: 'Segoe UI', -apple-system, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="850" height="360" rx="14" fill="url(#templeBg)" stroke="#381559" stroke-width="1.5" />
+
+  <!-- Animated White Starlight Dots (Twinkling Cosmic Particles) -->
+  <g fill="#ffffff">
+    <circle cx="80" cy="45" r="1.5" class="twinkle-1" opacity="0.8"/>
+    <circle cx="150" cy="100" r="1.2" class="twinkle-2" opacity="0.6"/>
+    <circle cx="240" cy="35" r="1.8" class="twinkle-3" opacity="0.9"/>
+    <circle cx="370" cy="85" r="1" class="twinkle-1" opacity="0.7"/>
+    <circle cx="490" cy="30" r="1.6" class="twinkle-2" opacity="0.8"/>
+    <circle cx="620" cy="75" r="1.2" class="twinkle-3" opacity="0.7"/>
+    <circle cx="740" cy="35" r="1.8" class="twinkle-1" opacity="0.9"/>
+    <circle cx="820" cy="80" r="1" class="twinkle-2" opacity="0.6"/>
+
+    <circle cx="100" cy="220" r="1.2" class="twinkle-3" opacity="0.6"/>
+    <circle cx="280" cy="280" r="1.6" class="twinkle-1" opacity="0.8"/>
+    <circle cx="460" cy="215" r="1" class="twinkle-2" opacity="0.5"/>
+    <circle cx="650" cy="310" r="1.5" class="twinkle-3" opacity="0.85"/>
+    <circle cx="790" cy="245" r="1.2" class="twinkle-1" opacity="0.7"/>
+    <circle cx="830" cy="320" r="1.6" class="twinkle-2" opacity="0.75"/>
+  </g>
+
+  <!-- Background Grid Lines -->
+  <g stroke="#ec4899" stroke-width="0.5" opacity="0.08">
+    <line x1="0" y1="60" x2="850" y2="60" />
+    <line x1="0" y1="130" x2="850" y2="130" />
+    <line x1="0" y1="205" x2="850" y2="205" />
+    <line x1="0" y1="280" x2="850" y2="280" />
+  </g>
+
+  <!-- Side Scale Indicator Bar (Shifted down, bottom ends at y=336) -->
+  <rect x="24" y="30" width="6" height="306" rx="3" fill="url(#crystalScaleGrad)" opacity="0.85" filter="url(#gemGlow)" />
+
+  <!-- Left Bar Star (Center at cy=23, Apex at y=11, clear of top border, pulsing glow) -->
+  <polygon points="27,11 30.5,19 39,19 32,24 35,32 27,27 19,32 22,24 15,19 23.5,19"
+           fill="#fde047" stroke="#ffffff" stroke-width="0.8" class="left-bar-star" />
+
+  <!-- Scanning Light Beam -->
+  <line x1="15" y1="15" x2="835" y2="15" stroke="#f43f5e" stroke-width="2" class="scan-line" opacity="0.8" filter="url(#gemGlow)" />
+
+  <!-- LAYER 1: FRONTEND & UXUI -->
+  <g transform="translate(48, 30)">
+    <rect width="775" height="66" rx="10" fill="url(#gemCardBg)" stroke="#f472b6" stroke-width="1.2" filter="url(#cardGlow)" />
+    
+    <!-- Large Frontend Icon (Height matches Title top to Subtitle bottom, 34x34px) -->
+    <g transform="translate(18, 16)">
+      <!-- Browser Window Frame -->
+      <rect x="1" y="1" width="32" height="32" rx="4.5" fill="none" stroke="#f472b6" stroke-width="1.5"/>
+      <!-- Window header divider -->
+      <line x1="1" y1="10" x2="33" y2="10" stroke="#f472b6" stroke-width="1.3"/>
+      <!-- Window dots -->
+      <circle cx="6" cy="5.5" r="1.3" fill="#f472b6"/>
+      <circle cx="10.5" cy="5.5" r="1.3" fill="#f472b6"/>
+      <circle cx="15" cy="5.5" r="1.3" fill="#f472b6"/>
+      <!-- Sidebar & Content layout -->
+      <line x1="11" y1="10" x2="11" y2="33" stroke="#f472b6" stroke-width="1.2"/>
+      <rect x="15" y="14.5" width="14" height="6" rx="1.5" fill="#f472b6" fill-opacity="0.35"/>
+      <rect x="15" y="23.5" width="9" height="4.5" rx="1.2" fill="#f472b6" fill-opacity="0.25"/>
+    </g>
+
+    <!-- Concise Title -->
+    <text x="64" y="29" class="sans" font-size="13" font-weight="800" fill="#fbcfe8" letter-spacing="1.2">
+      TIER I: FRONTEND &amp; UXUI
+    </text>
+    
+    <!-- Right Badge Pill -->
+    <rect x="665" y="18" width="92" height="30" rx="6" fill="#1b0e33" stroke="#f472b6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="711" y="37" class="mono" font-size="11" fill="#f472b6" font-weight="700" text-anchor="middle">FRONTEND</text>
+
+    <!-- Tech Stack Line -->
+    <text x="64" y="49" class="mono" font-size="11" fill="#e9d5ff">
+      Astro • React.js • JavaScript • TypeScript • Tailwind CSS • Bootstrap CSS
+    </text>
+  </g>
+
+  <!-- LAYER 2: BACKEND -->
+  <g transform="translate(48, 110)">
+    <rect width="775" height="66" rx="10" fill="url(#gemCardBg)" stroke="#fde047" stroke-width="1.5" filter="url(#cardGlow)" />
+    
+    <!-- Large Backend Icon (Height matches Title top to Subtitle bottom, 34x34px) -->
+    <g transform="translate(18, 16)">
+      <!-- Top Server Unit -->
+      <rect x="1" y="1" width="32" height="13.5" rx="3.5" fill="none" stroke="#fde047" stroke-width="1.5"/>
+      <circle cx="7" cy="7.75" r="1.8" fill="#fde047"/>
+      <circle cx="13" cy="7.75" r="1.8" fill="#fde047" fill-opacity="0.5"/>
+      <line x1="19" y1="7.75" x2="27" y2="7.75" stroke="#fde047" stroke-width="1.4" stroke-linecap="round"/>
+      <!-- Bottom Server Unit -->
+      <rect x="1" y="18.5" width="32" height="13.5" rx="3.5" fill="none" stroke="#fde047" stroke-width="1.5"/>
+      <circle cx="7" cy="25.25" r="1.8" fill="#fde047"/>
+      <circle cx="13" cy="25.25" r="1.8" fill="#fde047" fill-opacity="0.5"/>
+      <line x1="19" y1="25.25" x2="27" y2="25.25" stroke="#fde047" stroke-width="1.4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Concise Title -->
+    <text x="64" y="29" class="sans" font-size="13" font-weight="800" fill="#fef08a" letter-spacing="1.2">
+      TIER II: BACKEND
+    </text>
+
+    <!-- Right Badge Pill -->
+    <rect x="665" y="18" width="92" height="30" rx="6" fill="#1b0e33" stroke="#fde047" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="711" y="37" class="mono" font-size="11" fill="#fde047" font-weight="700" text-anchor="middle">BACKEND</text>
+
+    <!-- Tech Stack Line -->
+    <text x="64" y="49" class="mono" font-size="11" fill="#e9d5ff">
+      Golang • Java Spring Boot • Java Servlet • Node.js • Python
+    </text>
+  </g>
+
+  <!-- LAYER 3: DATABASE -->
+  <g transform="translate(48, 190)">
+    <rect width="775" height="66" rx="10" fill="url(#gemCardBg)" stroke="#a855f7" stroke-width="1.2" filter="url(#cardGlow)" />
+    
+    <!-- Large Database Icon (Height matches Title top to Subtitle bottom, 34x34px) -->
+    <g transform="translate(18, 16)">
+      <!-- Top Cylinder Disc -->
+      <ellipse cx="17" cy="6" rx="15" ry="5" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+      <!-- Middle Segment -->
+      <path d="M2 6 L2 16 A15 5 0 0 0 32 16 L32 6" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+      <!-- Bottom Segment -->
+      <path d="M2 16 L2 26 A15 5 0 0 0 32 26 L32 16" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+      <!-- Status dots -->
+      <circle cx="8" cy="16" r="1.3" fill="#a855f7"/>
+      <circle cx="8" cy="26" r="1.3" fill="#a855f7"/>
+    </g>
+
+    <!-- Concise Title -->
+    <text x="64" y="29" class="sans" font-size="13" font-weight="800" fill="#e9d5ff" letter-spacing="1.2">
+      TIER III: DATABASE
+    </text>
+
+    <!-- Right Badge Pill -->
+    <rect x="665" y="18" width="92" height="30" rx="6" fill="#1b0e33" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="711" y="37" class="mono" font-size="11" fill="#c084fc" font-weight="700" text-anchor="middle">DATABASE</text>
+
+    <!-- Tech Stack Line -->
+    <text x="64" y="49" class="mono" font-size="11" fill="#e9d5ff">
+      MySQL • PostgreSQL • MongoDB
+    </text>
+  </g>
+
+  <!-- LAYER 4: DEVOPS & INFRASTRUCTURE -->
+  <g transform="translate(48, 270)">
+    <rect width="775" height="66" rx="10" fill="url(#gemCardBg)" stroke="#38bdf8" stroke-width="1.2" filter="url(#cardGlow)" />
+    
+    <!-- Large DevOps Icon (Height matches Title top to Subtitle bottom, 34x34px) -->
+    <g transform="translate(18, 16)">
+      <!-- Cloud Outline -->
+      <path d="M5 28 A7 7 0 0 1 4 16 A9.5 9.5 0 0 1 20 10 A8 8 0 0 1 29 17 A6.5 6.5 0 0 1 28 28 Z" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Terminal CLI Prompt > _ -->
+      <path d="M11 18 L15 21.5 L11 25 M18 25 L22 25" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Concise Title -->
+    <text x="64" y="29" class="sans" font-size="13" font-weight="800" fill="#bae6fd" letter-spacing="1.2">
+      TIER IV: DEVOPS &amp; INFRASTRUCTURE
+    </text>
+
+    <!-- Right Badge Pill -->
+    <rect x="665" y="18" width="92" height="30" rx="6" fill="#1b0e33" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="711" y="37" class="mono" font-size="11" fill="#38bdf8" font-weight="700" text-anchor="middle">DEVOPS</text>
+
+    <!-- Tech Stack Line -->
+    <text x="64" y="49" class="mono" font-size="11" fill="#e9d5ff">
+      GitLab CI/CD • GitLab Runner • AWS Console • Docker Container
+    </text>
+  </g>
+</svg>

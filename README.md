@@ -1,32 +1,41 @@
 <!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--  🐋 NGUYEN KHOA — DEEP OCEAN & BLUE WHALE DEVELOPER PORTFOLIO      -->
-<!--  Theme: Abyssal Blue, Seafoam Aqua & Bioluminescent Cyan          -->
+<!--  ⭐ NGUYEN KHOA — STEVEN UNIVERSE & CRYSTAL GEMS DEVELOPER PORTFOLIO -->
+<!--  Theme: Rose Quartz Pink, Star Yellow & Cosmic Gem Twilight           -->
 <!-- ═══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <!-- Animated Swimming Blue Whale Header with Light Rays & Bioluminescent Depth -->
-  <img src="./assets/header-whale.svg" alt="Blue Whale Deep Ocean Header" width="100%" />
+  <!-- Animated Steven Universe & Rose Quartz Shield Cosmic Header -->
+  <img src="./assets/header-steven.svg" alt="Steven Universe Crystal Gems Header" width="100%" />
 </div>
+
+<br>
 
 <div align="center">
 
+  <!-- Steven Avatar circular portrait -->
+  <a href="https://github.com/Khoa18062005">
+    <img src="./assets/steven-avatar.jpg" alt="Steven Universe Avatar" width="125" height="125" style="border-radius: 50%; border: 3.5px solid #f43f5e; box-shadow: 0 0 24px rgba(244, 63, 94, 0.7);" />
+  </a>
+
+  <br><br>
+
   <!-- Animated Typing Subtitle -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=70&lines=Diving+into+distributed+systems+%26+high-concurrency+architecture;Crafting+scalable+full-stack+applications+with+clean+code" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fredoka+One&weight=700&size=21&duration=3000&pause=1000&color=F43F5E&center=true&vCenter=true&multiline=true&repeat=true&width=780&height=70&lines=Believe+in+Steven+%E2%80%A2+Engineering+resilient+distributed+systems;Crafting+scalable+full-stack+fusions+with+clean+code" alt="Typing SVG" />
   </a>
 
   <br>
 
-  <!-- Deep Ocean Shields Badges -->
+  <!-- Crystal Gem Shields Badges -->
   <a href="https://github.com/Khoa18062005?tab=followers">
-    <img src="https://img.shields.io/github/followers/Khoa18062005?logo=github&style=for-the-badge&color=0284c7&labelColor=03192e&logoColor=38bdf8" alt="Followers" />
+    <img src="https://img.shields.io/github/followers/Khoa18062005?logo=github&style=for-the-badge&color=f43f5e&labelColor=160b29&logoColor=fde047" alt="Followers" />
   </a>
   &nbsp;
   <a href="https://github.com/Khoa18062005?tab=repositories">
-    <img src="https://img.shields.io/badge/VESSEL-FULL--STACK%20DEV-0284c7?style=for-the-badge&labelColor=03192e&logoColor=2dd4bf" alt="Vessel Role" />
+    <img src="https://img.shields.io/badge/VESSEL-CRYSTAL%20GEM%20DEV-f43f5e?style=for-the-badge&labelColor=160b29&logoColor=fde047" alt="Vessel Role" />
   </a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Khoa18062005&label=OCEAN+VISITORS&color=0284c7&style=for-the-badge&labelColor=03192e" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Khoa18062005&label=BEACH+CITY+VISITORS&color=f43f5e&style=for-the-badge&labelColor=160b29" alt="Profile Views" />
 
 </div>
 
@@ -36,19 +45,19 @@
 
 <div align="center">
   <a href="https://github.com/Khoa18062005" target="_blank" title="GitHub Profile">
-    <img src="./assets/icons/github.svg" width="38" height="38" alt="GitHub" />
+    <img src="./assets/icons/gem-github.svg" width="40" height="40" alt="GitHub" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.facebook.com/quockhoa.nguyen.71404" target="_blank" title="Facebook Profile">
-    <img src="./assets/icons/facebook.svg" width="38" height="38" alt="Facebook" />
+    <img src="./assets/icons/gem-facebook.svg" width="40" height="40" alt="Facebook" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/nqkhoa_lks1806/" target="_blank" title="Instagram Profile">
-    <img src="./assets/icons/instagram.svg" width="38" height="38" alt="Instagram" />
+    <img src="./assets/icons/gem-instagram.svg" width="40" height="40" alt="Instagram" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="mailto:nguyenquockhoa00725005@gmail.com" title="Gửi thư trực tiếp">
-    <img src="./assets/icons/gmail.svg" width="38" height="38" alt="Gmail" />
+    <img src="./assets/icons/gem-gmail.svg" width="40" height="40" alt="Gmail" />
   </a>
 </div>
 
@@ -58,50 +67,52 @@
 <tr>
 <td width="50%" valign="top">
 
-### ◈ Acoustic Logbook
+### ◈ Crystal Heart Manifest
 
 ```bash
-nautilus@abyss:~$ cat telemetry_manifest.json
+steven@crystal-temple:~$ cat gem_manifest.json
 ```
 
 ```json
 {
   "name": "Nguyen Khoa",
-  "callsign": "BlueWhale-05",
-  "status": "University Software Engineering Student",
-  "specialization": "Full-Stack Development & Architecture",
-  "operating_depth": "Pacific Trench // 3,820m",
-  "current_expeditions": [
-    "High-Concurrency Distributed Systems",
-    "Microservice Ecosystems & Redis Redlock",
-    "Decoupled Full-Stack Architecture",
-    "Applied Machine Learning Pipelines"
+  "callsign": "Steven-Universe-05",
+  "status": "IT Student @ HCMUTE",
+  "origin": "Dong Nai, Vietnam",
+  "gem_affinity": "Rose Quartz Core // Pink Diamond Lineage",
+  "fusion_role": "Full-Stack System Architect",
+  "sanctuary": "Beach City Crystal Temple",
+  "active_missions": [
+    "High-Concurrency Shielding & Redis Redlock",
+    "Decoupled Clean Architecture & Stable Gem Fusions",
+    "Reactive Microservices & Resilient Gateways",
+    "Empathetic Machine Learning & NLP Pipelines"
   ],
-  "philosophy": "Like a blue whale navigating the boundless abyss, navigate complexity with calm precision and clean code."
+  "gem_philosophy": "If every porkchop were perfect, we wouldn't have hotdogs. Turn system anomalies into resilience through empathy, calm precision, and clean code."
 }
 ```
 
 </td>
 <td width="50%" valign="top">
 
-### ◈ Oceanic Telemetry
+### ◈ Temple Telemetry
 
 ```yaml
-# ocean_telemetry.yml
-submersible: "Nautilus-Mk.IV"
-hull_integrity: "100% nominal"
-acoustic_frequency: "20Hz resonance"
-ballast_water: "purified"
+# crystal_telemetry.yml
+sanctuary: "Crystal-Temple-Sanctum"
+crystal_heart: "100% nominal resonance"
+shield_frequency: "Rose Quartz Harmonics (432Hz)"
+warp_pad: "Multi-cluster synchronized"
 
-depth_readings:
-  surface_engineering:   ████████████████░░ 88%
-  backend_concurrency:   █████████████████░ 92%
-  distributed_caching:   ███████████████░░░ 80%
-  resilience_devops:     ████████████░░░░░░ 70%
+fusion_power_levels:
+  client_interface:       ████████████████░░ 88%
+  backend_concurrency:    █████████████████░ 92%
+  redis_shield_caching:   ███████████████░░░ 80%
+  warp_devops_cloud:      ████████████░░░░░░ 70%
 
-sonar_grid:
-  ping_rate: "Active (continuous sweep)"
-  connection: "Encrypted WebSocket"
+gem_sonar:
+  ping_rate: "Active (continuous Beach City sweep)"
+  connection: "Encrypted WebSocket Stream"
 ```
 
 </td>
@@ -110,16 +121,16 @@ sonar_grid:
 
 ---
 
-<!-- ═══════════════════ BATHYMETRIC TECH ECOSYSTEM ═══════════════════ -->
+<!-- ═══════════════════ GEM FUSION TECH ECOSYSTEM ═══════════════════ -->
 
 <div align="center">
 
-## ◈ Bathymetric Tech Ecosystem
+## ◈ Crystal Gem Fusion Tech Ecosystem
 
-<p><em>Mapping technology layers to oceanic depth zones — from sunlit interfaces to deep persistent trenches</em></p>
+<p><em>Mapping software engineering layers to the sacred tiers of the Crystal Temple — from Sunlit Warp Terraces to Subterranean Core Sanctums</em></p>
 
-  <!-- Bathymetric Ocean Depth Visualization (Replaces Skill Bars) -->
-  <img src="./assets/ocean-depths.svg" alt="Bathymetric Tech Depth Chart" width="100%" />
+  <!-- Crystal Matrix Visualization -->
+  <img src="./assets/crystal-matrix.svg" alt="Crystal Gem Tech Matrix" width="100%" />
 
 </div>
 
@@ -127,8 +138,8 @@ sonar_grid:
 
 <div align="center">
 
-<!-- Acoustic Marine Sonar Sweep -->
-  <img src="./assets/tech-radar.svg" alt="Deep Ocean Acoustic Radar" width="95%" />
+<!-- Gem Tech Sonar Scanner -->
+  <img src="./assets/gem-radar.svg" alt="Gem Sonar Radar" width="95%" />
 
 </div>
 
@@ -138,17 +149,17 @@ sonar_grid:
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,python,java,react,nextjs,tailwind,html,css&theme=dark" alt="Languages & Client Layer" />
+    <img src="https://skillicons.dev/icons?i=astro,react,js,ts,tailwind,bootstrap,html,css&theme=dark" alt="Frontend & Client Layer" />
   </a>
 </p>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,express,spring,postgres,mysql,redis,mongodb&theme=dark" alt="Backend & Data Reservoirs" />
+    <img src="https://skillicons.dev/icons?i=go,java,spring,nodejs,python,mysql,postgres,mongodb&theme=dark" alt="Backend & Databases" />
   </a>
 </p>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,aws,git,github,postman,graphql,nginx,linux,vscode&theme=dark" alt="Infrastructure & Marine Tooling" />
+    <img src="https://skillicons.dev/icons?i=gitlab,aws,docker,linux,git,github,postman,vscode&theme=dark" alt="DevOps & Infrastructure" />
   </a>
 </p>
 
@@ -170,33 +181,33 @@ sonar_grid:
   <tr>
     <td width="50%" valign="top">
       <div align="left">
-        <h4>◈ Abyssal Cinema Platform — CineBook</h4>
-        <p>Enterprise cinema ticketing platform engineered for <strong>extreme concurrent traffic</strong>. Solves distributed seat booking collisions using <strong>Redis Redlock distributed locking</strong>, accompanied by an intelligent real-time customer assistant.</p>
+        <h4>◈ Rose Shield Cinema Platform — CineBook</h4>
+        <p>Enterprise cinema ticketing platform engineered for <strong>extreme concurrent traffic</strong>. Solves distributed seat booking collisions using <strong>Redis Redlock distributed locking (Rose's Shield)</strong>, accompanied by an intelligent real-time customer assistant.</p>
         <p>
-          <img src="https://img.shields.io/badge/HTML5-03192e?style=flat-square&logo=html5&logoColor=38bdf8" />
-          <img src="https://img.shields.io/badge/Tailwind-03192e?style=flat-square&logo=tailwind-css&logoColor=2dd4bf" />
-          <img src="https://img.shields.io/badge/Redis_Redlock-03192e?style=flat-square&logo=redis&logoColor=f43f5e" />
-          <img src="https://img.shields.io/badge/High_Concurrency-0284c7?style=flat-square" />
+          <img src="https://img.shields.io/badge/HTML5-160b29?style=flat-square&logo=html5&logoColor=f43f5e" />
+          <img src="https://img.shields.io/badge/Tailwind-160b29?style=flat-square&logo=tailwind-css&logoColor=fde047" />
+          <img src="https://img.shields.io/badge/Redis_Redlock-160b29?style=flat-square&logo=redis&logoColor=f43f5e" />
+          <img src="https://img.shields.io/badge/High_Concurrency-be185d?style=flat-square" />
         </p>
         <p>
-          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Repository-Inspect_Source_%E2%86%92-0284c7?style=flat-square" /></a>
-          <img src="https://img.shields.io/badge/Status-Maintained-2dd4bf?style=flat-square" />
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Repository-Inspect_Source_%E2%86%92-f43f5e?style=flat-square" /></a>
+          <img src="https://img.shields.io/badge/Status-Shielded-fde047?style=flat-square" />
         </p>
       </div>
     </td>
     <td width="50%" valign="top">
       <div align="left">
-        <h4>◈ Nautilus Property Platform — MayVang</h4>
+        <h4>◈ Crystal Temple Property Platform — MayVang</h4>
         <p>Full-stack hotel reservation and property management ecosystem. Built on a <strong>decoupled micro-architecture</strong> separating Java Spring Boot core backend microservices from high-performance reactive web clients.</p>
         <p>
-          <img src="https://img.shields.io/badge/Java-03192e?style=flat-square&logo=openjdk&logoColor=fb923c" />
-          <img src="https://img.shields.io/badge/Spring_Boot-03192e?style=flat-square&logo=spring-boot&logoColor=4ade80" />
-          <img src="https://img.shields.io/badge/PostgreSQL-03192e?style=flat-square&logo=postgresql&logoColor=38bdf8" />
-          <img src="https://img.shields.io/badge/Clean_Architecture-0284c7?style=flat-square" />
+          <img src="https://img.shields.io/badge/Java-160b29?style=flat-square&logo=openjdk&logoColor=fde047" />
+          <img src="https://img.shields.io/badge/Spring_Boot-160b29?style=flat-square&logo=spring-boot&logoColor=4ade80" />
+          <img src="https://img.shields.io/badge/PostgreSQL-160b29?style=flat-square&logo=postgresql&logoColor=38bdf8" />
+          <img src="https://img.shields.io/badge/Clean_Architecture-be185d?style=flat-square" />
         </p>
         <p>
-          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Backend-Inspect_Source_%E2%86%92-0284c7?style=flat-square" /></a>
-          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Client-Inspect_Source_%E2%86%92-075985?style=flat-square" /></a>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Backend-Inspect_Source_%E2%86%92-f43f5e?style=flat-square" /></a>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Client-Inspect_Source_%E2%86%92-9d174d?style=flat-square" /></a>
         </p>
       </div>
     </td>
@@ -205,32 +216,32 @@ sonar_grid:
   <tr>
     <td width="50%" valign="top">
       <div align="left">
-        <h4>◈ Leviathan Intelligence — Sentiment Analysis Engine</h4>
-        <p>End-to-end Machine Learning pipeline for Vietnamese and multilingual text classification. Features high-dimensional tokenization, custom neural feature extraction, and lightweight decoupled inference micro-endpoints.</p>
+        <h4>◈ Crystal Empathy Intelligence — Sentiment Analysis Engine</h4>
+        <p>End-to-end Machine Learning pipeline for Vietnamese and multilingual text classification. Inspired by Steven's empathetic resonance — features high-dimensional tokenization, custom neural feature extraction, and lightweight inference micro-endpoints.</p>
         <p>
-          <img src="https://img.shields.io/badge/PyTorch-03192e?style=flat-square&logo=pytorch&logoColor=fb923c" />
-          <img src="https://img.shields.io/badge/Python-03192e?style=flat-square&logo=python&logoColor=38bdf8" />
-          <img src="https://img.shields.io/badge/Scikit_Learn-03192e?style=flat-square&logo=scikit-learn&logoColor=f59e0b" />
-          <img src="https://img.shields.io/badge/Model_Serving-0284c7?style=flat-square" />
+          <img src="https://img.shields.io/badge/PyTorch-160b29?style=flat-square&logo=pytorch&logoColor=fb923c" />
+          <img src="https://img.shields.io/badge/Python-160b29?style=flat-square&logo=python&logoColor=38bdf8" />
+          <img src="https://img.shields.io/badge/Scikit_Learn-160b29?style=flat-square&logo=scikit-learn&logoColor=f59e0b" />
+          <img src="https://img.shields.io/badge/Model_Serving-be185d?style=flat-square" />
         </p>
         <p>
-          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Inference_API-Explore_%E2%86%92-0284c7?style=flat-square" /></a>
-          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Web_Client-Explore_%E2%86%92-075985?style=flat-square" /></a>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Inference_API-Explore_%E2%86%92-f43f5e?style=flat-square" /></a>
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/Web_Client-Explore_%E2%86%92-9d174d?style=flat-square" /></a>
         </p>
       </div>
     </td>
     <td width="50%" valign="top">
       <div align="left">
-        <h4>◈ Deep Blue Algorithmic Agent — Heuristic Caro AI</h4>
-        <p>Autonomous strategic game agent capable of competitive play on arbitrary NxN boards. Implements <strong>dynamic heuristic evaluation functions</strong> with <strong>Alpha-Beta Pruning</strong> and branch optimization for sub-second moves.</p>
+        <h4>◈ Strategic Sapphire Agent — Heuristic Caro AI</h4>
+        <p>Autonomous strategic game agent capable of competitive play on arbitrary NxN boards. Implements <strong>dynamic heuristic evaluation functions</strong> with <strong>Alpha-Beta Pruning</strong> (Sapphire's future calculation) for sub-second moves.</p>
         <p>
-          <img src="https://img.shields.io/badge/Java-03192e?style=flat-square&logo=openjdk&logoColor=fb923c" />
-          <img src="https://img.shields.io/badge/Alpha_Beta-03192e?style=flat-square&logo=google&logoColor=2dd4bf" />
-          <img src="https://img.shields.io/badge/Game_Theory-0284c7?style=flat-square" />
+          <img src="https://img.shields.io/badge/Java-160b29?style=flat-square&logo=openjdk&logoColor=fde047" />
+          <img src="https://img.shields.io/badge/Alpha_Beta-160b29?style=flat-square&logo=google&logoColor=a855f7" />
+          <img src="https://img.shields.io/badge/Game_Theory-be185d?style=flat-square" />
         </p>
         <p>
-          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/AI_Engine-Inspect_Source_%E2%86%92-0284c7?style=flat-square" /></a>
-          <img src="https://img.shields.io/badge/Status-Benchmark_Passed-2dd4bf?style=flat-square" />
+          <a href="https://github.com/Khoa18062005"><img src="https://img.shields.io/badge/AI_Engine-Inspect_Source_%E2%86%92-f43f5e?style=flat-square" /></a>
+          <img src="https://img.shields.io/badge/Status-Benchmark_Passed-fde047?style=flat-square" />
         </p>
       </div>
     </td>
@@ -243,11 +254,11 @@ sonar_grid:
 
 ### ◈ Auxiliary Fleet Repositories
 
-| Fleet Repository | Technology Stack | Core Architecture & Focus | Access |
+| Temple Repository | Technology Stack | Core Architecture & Focus | Access |
 | :--- | :--- | :--- | :--- |
 | **Encrypted File Vault** | `C#` `.NET Core` | Local AES-256 filesystem encryption utility | [Inspect Repo →](https://github.com/Khoa18062005) |
-| **Ocean Commerce Engine** | `React` `Node.js` `Express` | Full-cycle e-commerce store with catalog & cart | [Inspect Repo →](https://github.com/Khoa18062005) |
-| **Submersible Task Manager** | `Java` `Desktop UI` | Desktop productivity scheduler & habit tracker | [Inspect Repo →](https://github.com/Khoa18062005) |
+| **Crystal Commerce Engine** | `React` `Node.js` `Express` | Full-cycle e-commerce store with catalog & cart | [Inspect Repo →](https://github.com/Khoa18062005) |
+| **Temple Task Manager** | `Java` `Desktop UI` | Desktop productivity scheduler & habit tracker | [Inspect Repo →](https://github.com/Khoa18062005) |
 | **Precision Scientific Engine** | `Java` `Algorithmic UI` | Multi-mode functional arithmetic calculator | [Inspect Repo →](https://github.com/Khoa18062005) |
 
 </div>
@@ -258,21 +269,21 @@ sonar_grid:
 
 <div align="center">
 
-## ◈ Abyssal Telemetry & Live Activity
+## ◈ Crystal Heart Telemetry & Live Activity
 
-  <!-- Custom Animated ECG / Sonar Pulse Monitor -->
-  <img src="./assets/activity-graph.svg" alt="Acoustic Sonar Activity Monitor" width="95%" />
+  <!-- Custom Animated Crystal Heart Resonance Monitor -->
+  <img src="./assets/crystal-heart-activity.svg" alt="Crystal Heart Activity Monitor" width="95%" />
 
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Khoa18062005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=03192e&title_color=38bdf8&icon_color=2dd4bf&text_color=e0f2fe" alt="GitHub Stats" width="48.5%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Khoa18062005&show_icons=true&hide_border=true&bg_color=12061f&title_color=f43f5e&icon_color=fde047&text_color=fce7f3" alt="GitHub Stats" width="48.5%" />
   &nbsp;
-  <img src="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=38bdf8&fire=2dd4bf&currStreakLabel=38bdf8&sideLabels=e0f2fe&currStreakNum=e0f2fe&sideNums=e0f2fe&dates=0284c7&background=03192e" alt="GitHub Streak" width="48.5%" />
+  <img src="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=f43f5e&fire=fde047&currStreakLabel=f43f5e&sideLabels=fce7f3&currStreakNum=fce7f3&sideNums=fce7f3&dates=ec4899&background=12061f" alt="GitHub Streak" width="48.5%" />
   <br><br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Khoa18062005&layout=compact&theme=tokyonight&hide_border=true&bg_color=03192e&title_color=38bdf8&text_color=e0f2fe" alt="Top Languages" width="55%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Khoa18062005&layout=compact&hide_border=true&bg_color=12061f&title_color=f43f5e&text_color=fce7f3" alt="Top Languages" width="55%" />
 </div>
 
 <br>
@@ -293,49 +304,41 @@ sonar_grid:
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake.svg" />
-    <img alt="Ocean Serpent Contribution Animation" src="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake.svg" width="100%" />
+    <img alt="Gem Serpent Contribution Animation" src="https://raw.githubusercontent.com/Khoa18062005/Khoa18062005/output/github-contribution-grid-snake.svg" width="100%" />
   </picture>
 </div>
 
 ---
 
-<!-- ═══════════════════ OCEAN PHILOSOPHY ═══════════════════ -->
+<!-- ═══════════════════ STEVEN'S PHILOSOPHY ═══════════════════ -->
 
 <div align="center">
 
-<!-- Ocean Quote -->
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The%20sea%2C%20once%20it%20casts%20its%20spell%2C%20holds%20one%20in%20its%20net%20of%20wonder%20forever.&author=Jacques%20Cousteau" alt="Ocean Quote" width="65%" />
+<!-- Crystal Gems Quote -->
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=If%20every%20porkchop%20were%20perfect%2C%20we%20wouldn't%20have%20hotdogs.&author=Steven%20Universe" alt="Steven Universe Quote" width="65%" />
 
 </div>
 
 ---
 
-<!-- ═══════════════════ MAJESTIC WHALE FOOTER ═══════════════════ -->
+<!-- ═══════════════════ CRYSTAL GEMS FOOTER ═══════════════════ -->
 
 <div align="center">
-  <!-- Animated Blue Whale Fluke / Wave Breaching Footer -->
-  <img src="./assets/footer-whale.svg" alt="Whale Fluke Wave Footer" width="100%" />
+  <!-- Beach City Twilight & Star Warp Pad Footer -->
+  <img src="./assets/footer-steven.svg" alt="Crystal Gem Beach City Footer" width="100%" />
 </div>
 
 <div align="center">
   <br>
   
   ```
-                                         __
-                                     _.-~  )
-                          _..--~~~~,'   ,-/     _
-                       .-'. . . .'   ,-','    ,' )
-                     ,'. . . _   ,--'  /(__.-'  ,'
-                   ,'. . .  (@)'---./   '-.   '-.
-                 ,'. . . . _----_   /       `'-. '.
-                / . . . . 'of_  '--'            `-'
-               / . . . . ._____|
-              | . . . . . . . .|
-              | . . . . . . . .|
-               \ . . . . . . ./   WHALE RESIDUE DETECTED:
-                \ . . . . . ./    CALM • RESILIENT • LIMITLESS
-                 `--._____.-'
+                   ★
+               .---★---.
+              /    |    \
+             |  ( ★ )    |   CRYSTAL GEM CORE DETECTED:
+              \    |    /    BELIEVE IN STEVEN • RESILIENT • LIMITLESS
+               '---★---'
   ```
   
-  <sub>≋ Navigating the digital ocean with curiosity, resilience, and clean architecture ≋</sub>
+  <sub>★ We will always find a way — Crafting resilient systems with empathy, fusion, and clean architecture ★</sub>
 </div>

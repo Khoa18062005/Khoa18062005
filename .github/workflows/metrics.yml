@@ -24,6 +24,6 @@ jobs:
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
           plugin_languages_sections: most-used
-          plugin_languages_colors: "0:${{ '#0ea5e9' }}, 1:${{ '#14b8a6' }}, 2:${{ '#06b6d4' }}, 3:${{ '#0284c7' }}, 4:${{ '#0d9488' }}"
+          plugin_languages_colors: "0:${{ '#f43f5e' }}, 1:${{ '#fde047' }}, 2:${{ '#a855f7' }}, 3:${{ '#38bdf8' }}, 4:${{ '#ec4899' }}"
           plugin_languages_limit: 8
           config_order: base.header, isocalendar, languages

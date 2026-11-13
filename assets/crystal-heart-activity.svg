@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <filter id="gemLineGlow">
+      <feGaussianBlur stdDeviation="2" result="blur1"/>
+      <feGaussianBlur stdDeviation="5" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="starPulseGlow">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="crystalEcgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="35%" stop-color="#f472b6"/>
+      <stop offset="70%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="crystalTrailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#fde047" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes drawLine {
+      0% { stroke-dashoffset: 1600; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes starPulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px #fde047); }
+      50% { transform: scale(1.2); filter: drop-shadow(0 0 10px #f43f5e); }
+    }
+    @keyframes fadeLoop { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
+    @keyframes statusBlink { 0%, 40% { fill: #f43f5e; } 50%, 90% { fill: #fde047; } 100% { fill: #f43f5e; } }
+
+    .ecg-line {
+      stroke-dasharray: 1600;
+      animation: drawLine 4.5s linear infinite;
+    }
+    .ecg-trail {
+      stroke-dasharray: 1600;
+      animation: drawLine 4.5s linear infinite;
+      animation-delay: -0.12s;
+    }
+    .cursor-blink { animation: blink 1s step-end infinite; }
+    .status-text { animation: fadeLoop 3s ease-in-out infinite; }
+    .status-dot { animation: statusBlink 2.5s ease-in-out infinite; }
+    .star-1 { transform-origin: 220px 60px; animation: starPulse 2.5s ease-in-out infinite; }
+    .star-2 { transform-origin: 560px 60px; animation: starPulse 2.5s ease-in-out infinite 1.25s; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="14" fill="#0d061a" stroke="#2b0e45" stroke-width="1.5"/>
+
+  <!-- Background Grid -->
+  <g opacity="0.05" stroke="#f472b6" stroke-width="0.6">
+    <line x1="0" y1="25" x2="800" y2="25"/><line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="75" x2="800" y2="75"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="125" x2="800" y2="125"/><line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="175" x2="800" y2="175"/>
+    <line x1="50" y1="0" x2="50" y2="200"/><line x1="100" y1="0" x2="100" y2="200"/>
+    <line x1="150" y1="0" x2="150" y2="200"/><line x1="200" y1="0" x2="200" y2="200"/>
+    <line x1="250" y1="0" x2="250" y2="200"/><line x1="300" y1="0" x2="300" y2="200"/>
+    <line x1="350" y1="0" x2="350" y2="200"/><line x1="400" y1="0" x2="400" y2="200"/>
+    <line x1="450" y1="0" x2="450" y2="200"/><line x1="500" y1="0" x2="500" y2="200"/>
+    <line x1="550" y1="0" x2="550" y2="200"/><line x1="600" y1="0" x2="600" y2="200"/>
+    <line x1="650" y1="0" x2="650" y2="200"/><line x1="700" y1="0" x2="700" y2="200"/>
+    <line x1="750" y1="0" x2="750" y2="200"/>
+  </g>
+
+  <!-- Top Header Bar (Clearly separated from waveform) -->
+  <g>
+    <circle cx="28" cy="22" r="4.5" class="status-dot"/>
+    <text x="40" y="26" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#fde047" letter-spacing="1.5">
+      ★ CRYSTAL HEART TELEMETRY // TEMPLE CORE
+    </text>
+    <text x="775" y="26" text-anchor="end" font-family="'Courier New', monospace" font-size="10.5" fill="#fbcfe8" class="status-text">
+      RESONANCE: 100% NOMINAL • 72 BPM
+    </text>
+    <!-- Divider Line -->
+    <line x1="20" y1="36" x2="780" y2="36" stroke="#f472b6" stroke-width="0.7" opacity="0.15" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Center baseline reference (y = 118) -->
+  <line x1="20" y1="118" x2="780" y2="118" stroke="#f472b6" stroke-width="0.6" opacity="0.15"/>
+
+  <!--
+    Heartbeat Waveform Path
+    Baseline: y = 118
+    Wave 1 peak at x = 220, y = 62 (leaving 26px clear gap to divider at y = 36!)
+    Wave 2 peak at x = 560, y = 62 (leaving 26px clear gap to divider at y = 36!)
+  -->
+
+  <!-- ECG Glow Trail -->
+  <path class="ecg-trail"
+        d="M 20 118
+           L 130 118 L 150 112 L 165 124 L 175 118
+           L 205 118 L 212 126 L 220 62 L 230 162 L 238 105 L 246 118
+           L 275 118 C 295 118, 305 92, 325 92 C 345 92, 355 118, 375 118
+           L 470 118 L 490 112 L 505 124 L 515 118
+           L 545 118 L 552 126 L 560 62 L 570 162 L 578 105 L 586 118
+           L 615 118 C 635 118, 645 92, 665 92 C 685 92, 695 118, 715 118
+           L 780 118"
+        fill="none" stroke="url(#crystalTrailGrad)" stroke-width="6" opacity="0.35"/>
+
+  <!-- ECG Main Line -->
+  <path class="ecg-line"
+        d="M 20 118
+           L 130 118 L 150 112 L 165 124 L 175 118
+           L 205 118 L 212 126 L 220 62 L 230 162 L 238 105 L 246 118
+           L 275 118 C 295 118, 305 92, 325 92 C 345 92, 355 118, 375 118
+           L 470 118 L 490 112 L 505 124 L 515 118
+           L 545 118 L 552 126 L 560 62 L 570 162 L 578 105 L 586 118
+           L 615 118 C 635 118, 645 92, 665 92 C 685 92, 695 118, 715 118
+           L 780 118"
+        fill="none" stroke="url(#crystalEcgGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#gemLineGlow)"/>
+
+  <!-- Peak Checkpoint Stars (Placed cleanly above peak, apex at y=50, safely below divider y=36) -->
+  <g class="star-1">
+    <polygon points="220,50 222.5,56 228.5,56 223.5,60 225.5,66 220,62.5 214.5,66 216.5,60 211.5,56 217.5,56"
+             fill="#fde047" stroke="#ffffff" stroke-width="0.8" filter="url(#starPulseGlow)"/>
+  </g>
+
+  <g class="star-2">
+    <polygon points="560,50 562.5,56 568.5,56 563.5,60 565.5,66 560,62.5 554.5,66 556.5,60 551.5,56 557.5,56"
+             fill="#fde047" stroke="#ffffff" stroke-width="0.8" filter="url(#starPulseGlow)"/>
+  </g>
+
+  <!-- Small valley pulse rings at S-dips (y = 162) -->
+  <circle cx="230" cy="162" r="3.5" fill="none" stroke="#f43f5e" stroke-width="1" opacity="0.6"/>
+  <circle cx="570" cy="162" r="3.5" fill="none" stroke="#f43f5e" stroke-width="1" opacity="0.6"/>
+
+  <!-- Bottom Telemetry Ticker -->
+  <g transform="translate(25, 184)">
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="10" fill="#f472b6" opacity="0.9">SHIELD DENSITY: [||||||||||||||||||||] 100%</text>
+    <text x="375" y="0" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#fde047" opacity="0.9">REDIS REDLOCK: LOCKED &amp; GUARDED</text>
+    <text x="750" y="0" text-anchor="end" font-family="'Courier New', monospace" font-size="10" fill="#38bdf8" opacity="0.9">WARP SYNC: ACTIVE<tspan class="cursor-blink">_</tspan></text>
+  </g>
+</svg>
