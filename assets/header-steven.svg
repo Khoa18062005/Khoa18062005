@@ -79,8 +79,8 @@
       100% { transform: translate(120px, 80px) rotate(180deg); opacity: 0; }
     }
 
-    .shield-group { transform-origin: 155px 160px; animation: shieldPulse 6s ease-in-out infinite; }
-    .star-inner { transform-origin: 155px 160px; filter: drop-shadow(0 0 8px #fde047); }
+    .shield-group { transform-origin: 125px 160px; animation: shieldPulse 6s ease-in-out infinite; }
+    .star-inner { transform-origin: 125px 160px; filter: drop-shadow(0 0 8px #fde047); }
 
     /* Gem drop-shadow styling (eliminates all rectangular bounding box artifacts) */
     .gem-rose {
@@ -123,7 +123,7 @@
   <!-- Starry Background Grid & Twinkling Stars -->
   <g fill="#ffffff">
     <circle cx="60" cy="40" r="1.5" class="twinkle-1" opacity="0.8"/>
-    <circle cx="120" cy="90" r="1" class="twinkle-2" opacity="0.6"/>
+    <circle cx="45" cy="95" r="1" class="twinkle-2" opacity="0.6"/>
     <circle cx="210" cy="30" r="2" class="twinkle-3" opacity="0.9"/>
     <circle cx="340" cy="70" r="1.5" class="twinkle-1" opacity="0.7"/>
     <circle cx="430" cy="35" r="1" class="twinkle-2" opacity="0.5"/>
@@ -151,16 +151,16 @@
   <!-- Left: Steven's Rose Quartz Shield Artifact -->
   <g class="shield-group">
     <!-- Soft Outer Shield Radial Glow (no box clip) -->
-    <circle cx="155" cy="160" r="115" fill="url(#shieldAura)"/>
-    <circle cx="155" cy="160" r="86" fill="url(#roseShieldBg)" stroke="#fbcfe8" stroke-width="4"/>
+    <circle cx="125" cy="160" r="115" fill="url(#shieldAura)"/>
+    <circle cx="125" cy="160" r="86" fill="url(#roseShieldBg)" stroke="#fbcfe8" stroke-width="4"/>
 
     <!-- Shield Spiral Motif (Rose's Thorny Spiral) -->
-    <circle cx="155" cy="160" r="72" fill="none" stroke="#be185d" stroke-width="3" stroke-dasharray="14 8" opacity="0.7"/>
-    <circle cx="155" cy="160" r="56" fill="#fda4af" stroke="#ffffff" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="125" cy="160" r="72" fill="none" stroke="#be185d" stroke-width="3" stroke-dasharray="14 8" opacity="0.7"/>
+    <circle cx="125" cy="160" r="56" fill="#fda4af" stroke="#ffffff" stroke-width="2.5" opacity="0.9"/>
 
     <!-- Steven's Iconic Golden Star (Clean, without center red dot) -->
     <g class="star-inner">
-      <polygon points="155,116 166,146 198,147 173,166 182,197 155,178 128,197 137,166 112,147 144,146" fill="url(#starGold)" stroke="#ffffff" stroke-width="1.8"/>
+      <polygon points="125,116 136,146 168,147 143,166 152,197 125,178 98,197 107,166 82,147 114,146" fill="url(#starGold)" stroke="#ffffff" stroke-width="1.8"/>
     </g>
   </g>
 
