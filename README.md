@@ -272,11 +272,11 @@ gem_sonar:
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Khoa18062005&show_icons=true&hide_border=true&bg_color=12061f&title_color=f43f5e&icon_color=fde047&text_color=fce7f3" alt="GitHub Stats" width="48.5%" />
+  <img src="https://github-readme-stats-murex-two.vercel.app/api?username=Khoa18062005&show_icons=true&hide_border=true&bg_color=12061f&title_color=f43f5e&icon_color=fde047&text_color=fce7f3" alt="GitHub Stats" width="48.5%" />
   &nbsp;
   <img src="https://streak-stats.demolab.com?user=Khoa18062005&theme=transparent&hide_border=true&ring=f43f5e&fire=fde047&currStreakLabel=f43f5e&sideLabels=fce7f3&currStreakNum=fce7f3&sideNums=fce7f3&dates=ec4899&background=12061f" alt="GitHub Streak" width="48.5%" />
   <br><br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs?username=Khoa18062005&layout=compact&hide_border=true&bg_color=12061f&title_color=f43f5e&text_color=fce7f3" alt="Top Languages" width="55%" />
+  <img src="https://github-readme-stats-murex-two.vercel.app/api/top-langs?username=Khoa18062005&layout=compact&hide_border=true&bg_color=12061f&title_color=f43f5e&text_color=fce7f3" alt="Top Languages" width="55%" />
 </div>
 
 <br>
